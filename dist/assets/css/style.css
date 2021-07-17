@@ -263,7 +263,6 @@ body {
     top: 0;
     justify-content: space-between;
     height: 7rem;
-    line-height: 7rem;
     padding: 1rem 0;
     z-index: 10; }
     .header .nav__logo {
@@ -284,15 +283,11 @@ body {
       list-style: none; }
     .header .nav__item {
       position: relative; }
-      @media (max-width: 991.98px) {
-        .header .nav__item {
-          display: flex;
-          align-items: center;
-          height: 42px; } }
       @media (min-width: 992px) {
         .header .nav__item {
           display: inline-block; } }
       .header .nav__item-link {
+        display: block;
         padding: 1rem 2.4rem 1rem 0 !important;
         color: #fff !important;
         text-decoration: none;

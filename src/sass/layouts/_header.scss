@@ -45,7 +45,6 @@
     top: 0;
     justify-content: space-between;
     height: 7rem;
-    line-height: 7rem;
     padding: 1rem 0;
     z-index: 10;
 
@@ -73,15 +72,11 @@
 
     &__item {
       position: relative;
-      @include media-breakpoint-down(lg) {
-        display: flex;
-        align-items: center;
-        height: 42px;
-      }
       @include media-breakpoint-up(lg) {
         display: inline-block;
       }
       &-link {
+        display: block;
         padding: 1rem 2.4rem 1rem 0 !important;
         color: $white !important;
         text-decoration: none;
