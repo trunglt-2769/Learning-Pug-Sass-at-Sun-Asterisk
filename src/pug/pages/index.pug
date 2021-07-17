@@ -21,7 +21,7 @@ block content
 				button.carousel-control-next.carousel-btn.position-absolute.top-50.end-0.translate-middle-y.me-3(type='button' data-bs-target='#carouselHeroCaptions' data-bs-slide='next')
 					span.carousel-control-next-icon(aria-hidden='true')
 					span.visually-hidden Next
-	section.about
+	section.about#About
 		.container-fluid
 			.row
 				.col-12.col-lg-5.d-flex.align-items-stretch
@@ -50,7 +50,7 @@ block content
 					.col-lg-4.d-flex.flex-column.flex-lg-row.align-items-stretch
 						+box(item)
 	
-	section.menu
+	section.menu#Menu
 		.container
 			+top-content(menuTitle)
 			ul#pills-tab.nav.nav-pills.mb-3.justify-content-center(role='tablist')
@@ -83,7 +83,7 @@ block content
 						each item in menuCategory.specialty
 							.col-12.col-lg-6.ps-4.pe-4
 								+menuItem(item)
-	section.specials
+	section.specials#Specials
 		.container
 			+top-content(specialsTitle)
 			.row
@@ -106,7 +106,7 @@ block content
 							+specialInfo(specialsInfo[3])
 						#v-pills-fifth.tab-pane.fade(role='tabpanel' aria-labelledby='v-pills-fifth-tab')
 							+specialInfo(specialsInfo[4])
-	section.event
+	section.event#Event
 		.container
 			+top-content(eventTitle)
 			#carouselEventIndicators.carousel.slide(data-bs-ride='carousel')
@@ -153,7 +153,7 @@ block content
 					textarea#message.form-control.form-control-lg.p-3.mb-4.fs-4(name='message' placeholder='Message' rows='8')
 				.text-center.mt-1
 					button.btn.btn-rounded.btn-rounded--yellow.pt-3.pb-3(type='submit') Send Message
-	section.gallery
+	section.gallery#Gallery
 		.container-fluid
 			+top-content(galleryTitle)
 			.row
@@ -161,7 +161,7 @@ block content
 					.col-12.col-sm-6.col-md-4.col-lg-3
 						+imgBox(imgUrl)
 
-	section.chefs
+	section.chefs#Chefs
 		.container
 			+top-content(chefsTitle)
 			.row 
@@ -189,7 +189,7 @@ block content
 						+testimonialInfo(testimonialsInfo[3])
 					.carousel-item
 						+testimonialInfo(testimonialsInfo[4])
-	section.contact
+	section.contact#Contact
 		.container-fluid
 			+top-content(contactTitle)
 			iframe.w-100(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3833.715598447407!2d108.21780861528562!3d16.080241488874165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3142183b8dc2697d%3A0xc105565d68b6ad90!2zMTYgTMO9IFRoxrDhu51uZyBLaeG7h3QsIFRo4bqhY2ggVGhhbmcsIEjhuqNpIENow6J1LCDEkMOgIE7hurVuZyA1NTAwMDAsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1626509773735!5m2!1svi!2s' width='600' height='450' style='border:0;' allowfullscreen='' loading='lazy')

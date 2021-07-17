@@ -25,10 +25,10 @@ header.header
                                     a.nav__item-link.active(href="#")= item
                             else if (item === 'Drop Down')
                                 li.nav__item
-                                    a.nav__item-link(href="#")= item
+                                    a.nav__item-link(href="#!")= item
                                         em.fas.fa-chevron-down.ms-2
                                     +subnav(subnavItem, subnavDeepItem)
                             else
                                 li.nav__item
-                                    a.nav__item-link(href="#")= item
+                                    a.nav__item-link(href="#"+ item)= item
 
