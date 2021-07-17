@@ -1,0 +1,168 @@
+.header {
+  position: sticky;
+  top: -5rem;
+  padding: 0 1rem;
+  height: 12rem;
+  background-color: rgba($black, 0.5);
+  -webkit-backdrop-filter: blur(1rem);
+  backdrop-filter: blur(1rem);
+  font-size: 1.4rem;
+  display: flex;
+  z-index: 999;
+
+  &__top {
+    display: flex;
+    align-items: center;
+    height: 5rem;
+
+    .top-section {
+      display: inline-block;
+      margin-right: 2rem;
+      em {
+        color: $yellow;
+        &::after {
+          content: "";
+          margin-right: 0.5rem;
+        }
+      }
+      span {
+        color: $white;
+      }
+      @include media-breakpoint-down(lg) {
+        &:nth-child(1) {
+          margin: 0 auto;
+        }
+        &:nth-child(2) {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .nav {
+    display: relative;
+    position: sticky;
+    top: 0;
+    justify-content: space-between;
+    height: 7rem;
+    line-height: 7rem;
+    padding: 1rem 0;
+    z-index: 10;
+
+    &__logo {
+      height: 100%;
+      letter-spacing: 0.2rem;
+      margin-right: auto;
+      color: $white;
+      text-decoration: none;
+      &:hover {
+        color: $white;
+      }
+      h1 {
+        margin: 0;
+        font-size: 2.8rem;
+        font-family: $font-special;
+        line-height: 5rem;
+      }
+    }
+
+    &__list {
+      margin: 0;
+      list-style: none;
+    }
+
+    &__item {
+      position: relative;
+      @include media-breakpoint-down(lg) {
+        display: flex;
+        align-items: center;
+        height: 42px;
+      }
+      @include media-breakpoint-up(lg) {
+        display: inline-block;
+      }
+      &-link {
+        padding: 1rem 2.4rem 1rem 0 !important;
+        color: $white !important;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        &:hover,
+        &:focus {
+          color: $yellow--hover !important;
+        }
+      }
+
+      &:hover {
+        #subnav {
+          display: block;
+        }
+      }
+    }
+
+    .active {
+      color: $yellow--hover !important;
+    }
+
+    button.btn {
+      margin-right: 1.4rem;
+      @include media-breakpoint-up(lg) {
+        margin-right: 0;
+        order: 1;
+      }
+    }
+  }
+}
+
+.navbar-collapse {
+  @include media-breakpoint-down(lg) {
+    margin-top: 10px;
+    background-color: rgba($black, 0.5);
+    overflow: scroll;
+  }
+}
+
+.navbar-collapse.collapse.show {
+}
+.subnav {
+  display: none;
+  padding: 0;
+  min-width: 18rem;
+  position: absolute;
+  top: 80%;
+  left: 0;
+  border-radius: 0.5rem;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  animation: slide-down 0.4s ease-out;
+  z-index: 10;
+  &--right {
+    top: 0;
+    left: 100%;
+  }
+  &__item {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    list-style: none;
+    line-height: 2rem;
+    &-link {
+      text-decoration: none;
+      color: $text;
+    }
+
+    &:hover {
+      & > a,
+      & > em {
+        transition: all 0.3s ease;
+        color: $yellow--hover;
+        cursor: pointer;
+      }
+
+      #subnav-deep {
+        display: block;
+      }
+    }
+  }
+}

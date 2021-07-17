@@ -1,0 +1,17 @@
+include ../base/mixins.pug
+
+footer.footer
+    .container.py-5
+        +top-content(footerTitle)
+        .footer__social-links
+            each item in footer.socialList
+                a(href= item.link)
+                    em.icon--white(class= item.icon)
+        .footer__copyright
+            | &copy; Copyright 
+            strong
+                span Delicious
+            | . All Rights Reserved
+        .footer__credits
+            | Designed by 
+            a(href='#!') BootstrapMade

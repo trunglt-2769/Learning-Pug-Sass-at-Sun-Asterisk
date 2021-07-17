@@ -1,0 +1,32 @@
+$white: #fff;
+$black: #000;
+$yellow: #ffb03b;
+$yellow--hover: #ffa012;
+$strong-yellow: #ff9b08;
+
+$strong-text: #35322d;
+$text: #5f5950;
+$light-text: #848484;
+$light-border: #e8e7e4;
+$floralwhite: #fffaf3;
+$font-special: "Satisfy", cursive;
+
+$breakpoints: (
+  "small": (
+    min-width: 767px,
+  ),
+  "medium": (
+    min-width: 992px,
+  ),
+  "large": (
+    min-width: 1200px,
+  ),
+) !default;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+);

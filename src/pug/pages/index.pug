@@ -1,0 +1,213 @@
+extends ../layouts/default-layout.pug
+include ../base/mixins.pug
+
+block content
+	section.scroll-to-top
+		a.btn-rounded.btn-rounded--yellow(href="#")
+			em.scroll-to-top__icon.fas.fa-arrow-up
+	section.hero
+		.container-fluid.g-0
+			#carouselHeroCaptions.carousel.slide(data-bs-ride='carousel')
+				.carousel-indicators
+					button.active(type='button' data-bs-target='#carouselHeroCaptions' data-bs-slide-to='0' aria-current='true' aria-label='Slide 1')
+					button(type='button' data-bs-target='#carouselHeroCaptions' data-bs-slide-to='1' aria-label='Slide 2')
+					button(type='button' data-bs-target='#carouselHeroCaptions' data-bs-slide-to='2' aria-label='Slide 3')
+				.carousel-inner
+					each item in heroInfo
+						+carouselContent(item.imgUrl, item.imgName, item.yellowHeading, item.heading, item.desc, item.btnName)
+				button.carousel-control-prev.carousel-btn.position-absolute.top-50.start-0.translate-middle-y.ms-3(type='button' data-bs-target='#carouselHeroCaptions' data-bs-slide='prev')
+					span.carousel-control-prev-icon(aria-hidden='true')
+					span.visually-hidden Previous
+				button.carousel-control-next.carousel-btn.position-absolute.top-50.end-0.translate-middle-y.me-3(type='button' data-bs-target='#carouselHeroCaptions' data-bs-slide='next')
+					span.carousel-control-next-icon(aria-hidden='true')
+					span.visually-hidden Next
+	section.about
+		.container-fluid
+			.row
+				.col-12.col-lg-5.d-flex.align-items-stretch
+					.about__video-bg
+						a.about__play-btn(href="https://www.youtube.com/watch?v=p37_Ux1G_BI")
+							span
+								em.fas.fa-play-circle
+							span.border-animation.border-animation--border-1
+							span.border-animation.border-animation--border-2
+				.col-12.col-lg-7.d-flex.flex-column.justify-content-center.align-items-stretch
+					.about__content
+						each item in aboutInfo
+							h3.about__heading= item.heading
+								span= item.strongHeading
+							p.about__para= item.paraTop
+							p.about__para.about__para--italic= item.paraItalic
+							ul.about__list
+								each listItem in item.list
+									li.about__list-item= listItem
+							p.about__para= item.paraBot
+	section.why-us
+		.container
+			+top-content(whyUsTitle)
+			.row
+				each item in whyUsBox
+					.col-lg-4.d-flex.flex-column.flex-lg-row.align-items-stretch
+						+box(item)
+	
+	section.menu
+		.container
+			+top-content(menuTitle)
+			ul#pills-tab.nav.nav-pills.mb-3.justify-content-center(role='tablist')
+				li.nav-item(role='presentation')
+					button.btn.btn-rounded.btn-rounded--yellow-outline#pills-show-all-tab.nav-link.active(data-bs-toggle='pill' data-bs-target='#pills-show-all' type='button' role='tab' aria-controls='pills-show-all' aria-selected='true') Show All
+				li.nav-item(role='presentation')
+					button.btn.btn-rounded.btn-rounded--yellow-outline#pills-starters-tab.nav-link(data-bs-toggle='pill' data-bs-target='#pills-starters' type='button' role='tab' aria-controls='pills-starters' aria-selected='false') Starters
+				li.nav-item(role='presentation')
+					button.btn.btn-rounded.btn-rounded--yellow-outline#pills-salads-tab.nav-link(data-bs-toggle='pill' data-bs-target='#pills-salads' type='button' role='tab' aria-controls='pills-salads' aria-selected='false') Salads
+				li.nav-item(role='presentation')
+					button.btn.btn-rounded.btn-rounded--yellow-outline#pills-specialty-tab.nav-link(data-bs-toggle='pill' data-bs-target='#pills-specialty' type='button' role='tab' aria-controls='pills-specialty' aria-selected='false') Specialty
+			#pills-tabContent.tab-content
+				#pills-show-all.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='pills-show-all-tab')
+					.row.justify-content-between
+						each item in menuCategory.all
+							.col-12.col-lg-6.ps-4.pe-4
+								+menuItem(item)
+				#pills-starters.tab-pane.fade(role='tabpanel' aria-labelledby='pills-starters-tab')
+					.row
+						each item in menuCategory.starters
+							.col-12.col-lg-6.ps-4.pe-4
+								+menuItem(item)
+				#pills-salads.tab-pane.fade(role='tabpanel' aria-labelledby='pills-salads-tab')
+					.row
+						each item in menuCategory.salads
+							.col-12.col-lg-6.ps-4.pe-4
+								+menuItem(item)
+				#pills-specialty.tab-pane.fade(role='tabpanel' aria-labelledby='pills-specialty-tab')
+					.row
+						each item in menuCategory.specialty
+							.col-12.col-lg-6.ps-4.pe-4
+								+menuItem(item)
+	section.specials
+		.container
+			+top-content(specialsTitle)
+			.row
+				.col-12.col-lg-3
+					#v-pills-tab.nav.flex-column.nav-pills.me-3(role='tablist' aria-orientation='vertical')
+						button#v-pills-home-tab.nav-link.active(data-bs-toggle='pill' data-bs-target='#v-pills-first' type='button' role='tab' aria-controls='v-pills-first' aria-selected='true') Modi sit est
+						button#v-pills-second-tab.nav-link(data-bs-toggle='pill' data-bs-target='#v-pills-second' type='button' role='tab' aria-controls='v-pills-second' aria-selected='false') Unde praesentium sed
+						button#v-pills-third-tab.nav-link(data-bs-toggle='pill' data-bs-target='#v-pills-third' type='button' role='tab' aria-controls='v-pills-third' aria-selected='false') Pariatur explicabo vel
+						button#v-pills-fourth-tab.nav-link(data-bs-toggle='pill' data-bs-target='#v-pills-fourth' type='button' role='tab' aria-controls='v-pills-fourth' aria-selected='false') Nostrum qui quasi
+						button#v-pills-fifth-tab.nav-link(data-bs-toggle='pill' data-bs-target='#v-pills-fifth' type='button' role='tab' aria-controls='v-pills-fifth' aria-selected='false') Iusto ut expedita aut
+				.col-12.col-lg-9
+					#v-pills-tabContent.tab-content
+						#v-pills-first.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='v-pills-first-tab')
+							+specialInfo(specialsInfo[0])
+						#v-pills-second.tab-pane.fade(role='tabpanel' aria-labelledby='v-pills-second-tab')
+							+specialInfo(specialsInfo[1])
+						#v-pills-third.tab-pane.fade(role='tabpanel' aria-labelledby='v-pills-third-tab')
+							+specialInfo(specialsInfo[2])
+						#v-pills-fourth.tab-pane.fade(role='tabpanel' aria-labelledby='v-pills-fourth-tab')
+							+specialInfo(specialsInfo[3])
+						#v-pills-fifth.tab-pane.fade(role='tabpanel' aria-labelledby='v-pills-fifth-tab')
+							+specialInfo(specialsInfo[4])
+	section.event
+		.container
+			+top-content(eventTitle)
+			#carouselEventIndicators.carousel.slide(data-bs-ride='carousel')
+				.carousel-indicators
+					button.active(type='button' data-bs-target='#carouselEventIndicators' data-bs-slide-to='0' aria-current='true' aria-label='Slide 1')
+					button(type='button' data-bs-target='#carouselEventIndicators' data-bs-slide-to='1' aria-label='Slide 2')
+					button(type='button' data-bs-target='#carouselEventIndicators' data-bs-slide-to='2' aria-label='Slide 3')
+				.carousel-inner
+					.carousel-item.active
+						.row.pb-4.mb-5
+							.col-lg-6
+								img.d-block.w-100.mb-5.mb-lg-0(src='./assets/images/event-birthday.jpg' alt='image birthday')
+							.col-lg-6 
+								+eventInfo(eventInfo[0])
+					.carousel-item
+						.row.pb-4.mb-5
+							.col-lg-6
+								img.d-block.w-100.mb-5.mb-lg-0(src='./assets/images/event-private.jpg' alt='image private')
+							.col-lg-6 
+								+eventInfo(eventInfo[1])
+					.carousel-item
+						.row.pb-4.mb-5
+							.col-lg-6
+								img.d-block.w-100.mb-5.mb-lg-0(src='./assets/images/event-custom.jpg' alt='image custom')
+							.col-lg-6
+								+eventInfo(eventInfo[2])
+	section.book-a-table
+		.container
+			+top-content(bookTitle)
+			form.row(action='#').shadow.p-5
+				.col-lg-4.col-md-6.col-12.mb-3 
+					input#inputName.form-control.form-control-lg.p-3.mb-2.fs-4(type='text' placeholder='Your Name' required='')
+				.col-lg-4.col-md-6.col-12.mb-3 
+					input#inputEmail.form-control.form-control-lg.p-3.mb-2.fs-4(type='Email' placeholder='Your Email' required='')
+				.col-lg-4.col-md-6.col-12.mb-3 
+					input#inputPhone.form-control.form-control-lg.p-3.mb-2.fs-4(type='text' placeholder='Your Phone' required='')
+				.col-lg-4.col-md-6.col-12.mb-3 
+					input#inputDate.form-control.form-control-lg.p-3.mb-2.fs-4(type='text' placeholder='Date' required='')
+				.col-lg-4.col-md-6.col-12.mb-3 
+					input#inputTime.form-control.form-control-lg.p-3.mb-2.fs-4(type='text' placeholder='Time' required='')
+				.col-lg-4.col-md-6.col-12.mb-3 
+					input#inputNumberOfPeople.form-control.form-control-lg.p-3.mb-2.fs-4(type='text' placeholder='# of People' required='')
+				.col-lg-12.mb-3 
+					textarea#message.form-control.form-control-lg.p-3.mb-4.fs-4(name='message' placeholder='Message' rows='8')
+				.text-center.mt-1
+					button.btn.btn-rounded.btn-rounded--yellow.pt-3.pb-3(type='submit') Send Message
+	section.gallery
+		.container-fluid
+			+top-content(galleryTitle)
+			.row
+				each imgUrl in gallery
+					.col-12.col-sm-6.col-md-4.col-lg-3
+						+imgBox(imgUrl)
+
+	section.chefs
+		.container
+			+top-content(chefsTitle)
+			.row 
+				each chef in chefsInfo
+					.col-12.col-md-6.col-lg-4
+						+chefCard(chef)
+
+	section.testimonials
+		.container
+			#carouselTestimonialIndicators.carousel.slide(data-bs-ride='carousel')
+				.carousel-indicators
+					button.active(type='button' data-bs-target='#carouselTestimonialIndicators' data-bs-slide-to='0' aria-current='true' aria-label='Slide 1')
+					button(type='button' data-bs-target='#carouselTestimonialIndicators' data-bs-slide-to='1' aria-label='Slide 2')
+					button(type='button' data-bs-target='#carouselTestimonialIndicators' data-bs-slide-to='2' aria-label='Slide 3')
+					button(type='button' data-bs-target='#carouselTestimonialIndicators' data-bs-slide-to='3' aria-label='Slide 4')
+					button(type='button' data-bs-target='#carouselTestimonialIndicators' data-bs-slide-to='4' aria-label='Slide 5')
+				.carousel-inner
+					.carousel-item.active
+						+testimonialInfo(testimonialsInfo[0])
+					.carousel-item
+						+testimonialInfo(testimonialsInfo[1])
+					.carousel-item
+						+testimonialInfo(testimonialsInfo[2])
+					.carousel-item
+						+testimonialInfo(testimonialsInfo[3])
+					.carousel-item
+						+testimonialInfo(testimonialsInfo[4])
+	section.contact
+		.container-fluid
+			+top-content(contactTitle)
+			iframe.w-100(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3833.715598447407!2d108.21780861528562!3d16.080241488874165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3142183b8dc2697d%3A0xc105565d68b6ad90!2zMTYgTMO9IFRoxrDhu51uZyBLaeG7h3QsIFRo4bqhY2ggVGhhbmcsIEjhuqNpIENow6J1LCDEkMOgIE7hurVuZyA1NTAwMDAsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1626509773735!5m2!1svi!2s' width='600' height='450' style='border:0;' allowfullscreen='' loading='lazy')
+		.container.mt-5
+			.contact__info
+				.row.p-5.shadow
+					each item in contactInfo
+						.col-lg-3.col-md-6.col-12
+							+contactItem(item)
+
+			form.row(action='#').shadow.p-5
+				.col-md-6.col-12.mb-3 
+					input#inputName.form-control.form-control-lg.p-3.mb-2.fs-4(type='text' placeholder='Your Name' required='')
+				.col-md-6.col-12.mb-3 
+					input#inputEmail.form-control.form-control-lg.p-3.mb-2.fs-4(type='Email' placeholder='Your Email' required='')
+				.col-12.mb-3 
+					input#inputSubject.form-control.form-control-lg.p-3.mb-2.fs-4(type='text' placeholder='Subject' required='')
+				.col-12.mb-3 
+					textarea#message.form-control.form-control-lg.p-3.mb-4.fs-4(name='message' placeholder='Message' rows='8')
+				.text-center.mt-1
+					button.btn.btn-rounded.btn-rounded--yellow.pt-3.pb-3(type='submit') Send Message

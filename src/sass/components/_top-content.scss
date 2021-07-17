@@ -1,0 +1,23 @@
+.top-content {
+  text-align: center;
+  padding-bottom: 30px;
+  h2 {
+    margin-top: 15px;
+    font-family: $font-special;
+    font-size: 3.2rem;
+    font-weight: 700;
+
+    span {
+      color: $yellow;
+    }
+  }
+
+  p {
+    font-weight: 100;
+    margin-top: 15px;
+    @include media-breakpoint-up(lg) {
+      margin-left: 25%;
+      margin-right: 25%;
+    }
+  }
+}

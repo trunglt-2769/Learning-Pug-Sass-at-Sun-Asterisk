@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Delicious</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container-xl">
+        <div class="row">
+          <div class="header__top">
+            <div class="top-section"><em class="fas fa-mobile-alt"></em><span>+1 5589 55488 55</span></div>
+            <div class="top-section"><em class="far fa-clock"></em><span>Mon-Sat: 11:00 AM - 23:00 PM</span></div>
+          </div>
+        </div>
+        <div class="row">
+          <nav class="nav navbar navbar-expand-lg navbar-dark"><a class="nav__logo" href="#">
+              <h1>Delicious</h1></a>
+            <button class="btn btn-rounded btn-rounded--yellow" type="button">Book a table</button>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+              <ul class="nav__list"> 
+                <li class="nav__item"><a class="nav__item-link active" href="#">Home</a></li>
+                <li class="nav__item"><a class="nav__item-link" href="#">About</a></li>
+                <li class="nav__item"><a class="nav__item-link" href="#">Menu</a></li>
+                <li class="nav__item"><a class="nav__item-link" href="#">Specials</a></li>
+                <li class="nav__item"><a class="nav__item-link" href="#">Event</a></li>
+                <li class="nav__item"><a class="nav__item-link" href="#">Chefs</a></li>
+                <li class="nav__item"><a class="nav__item-link" href="#">Gallery</a></li>
+                <li class="nav__item"><a class="nav__item-link" href="#">Drop Down<em class="fas fa-chevron-down ms-2"></em></a>
+                      <ul class="subnav" id="subnav">
+                            <li class="subnav__item"><a class="subnav__item-link" href="#">Drop Down 1</a>
+                            </li>
+                            <li class="subnav__item"><a class="subnav__item-link" href="#">Deep Drop Down</a><em class="fas fa-chevron-right"></em>
+                                  <ul class="subnav subnav--right" id="subnav-deep">
+                                        <li class="subnav__item"><a class="subnav__item-link" href="#">Deep Drop Down 1</a>
+                                        </li>
+                                        <li class="subnav__item"><a class="subnav__item-link" href="#">Deep Drop Down 2</a>
+                                        </li>
+                                        <li class="subnav__item"><a class="subnav__item-link" href="#">Deep Drop Down 3</a>
+                                        </li>
+                                        <li class="subnav__item"><a class="subnav__item-link" href="#">Deep Drop Down 4</a>
+                                        </li>
+                                        <li class="subnav__item"><a class="subnav__item-link" href="#">Deep Drop Down 5</a>
+                                        </li>
+                                  </ul>
+                            </li>
+                            <li class="subnav__item"><a class="subnav__item-link" href="#">Drop Down 2</a>
+                            </li>
+                            <li class="subnav__item"><a class="subnav__item-link" href="#">Drop Down 3</a>
+                            </li>
+                            <li class="subnav__item"><a class="subnav__item-link" href="#">Drop Down 4</a>
+                            </li>
+                      </ul>
+                </li>
+                <li class="nav__item"><a class="nav__item-link" href="#">Contact</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <section class="scroll-to-top"><a class="btn-rounded btn-rounded--yellow" href="#"><em class="scroll-to-top__icon fas fa-arrow-up"></em></a></section>
+    <section class="hero">
+      <div class="container-fluid g-0">
+        <div class="carousel slide" id="carouselHeroCaptions" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button class="active" type="button" data-bs-target="#carouselHeroCaptions" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselHeroCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselHeroCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+                <div class="carousel-item active"><img class="d-block" src="./assets/images/slider/slide-1.jpg" alt="slider 1">
+                      <div class="hero__content">
+                        <h2 class="hero__heading"><span class="text-yellow">Delicious </span><span>Restaurant</span></h2>
+                        <p class="hero__desc">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p><a class="btn btn-rounded btn-rounded--yellow-outline mx-3">OUR MENU</a><a class="btn btn-rounded btn-rounded--yellow-outline mx-3">BOOK A TABLE</a>
+                      </div>
+                </div>
+                <div class="carousel-item"><img class="d-block" src="./assets/images/slider/slide-2.jpg" alt="slider 2">
+                      <div class="hero__content">
+                        <h2 class="hero__heading"><span class="text-yellow"></span><span>Lorem Ipsum Dolor</span></h2>
+                        <p class="hero__desc">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p><a class="btn btn-rounded btn-rounded--yellow-outline mx-3">OUR MENU</a><a class="btn btn-rounded btn-rounded--yellow-outline mx-3">BOOK A TABLE</a>
+                      </div>
+                </div>
+                <div class="carousel-item"><img class="d-block" src="./assets/images/slider/slide-3.jpg" alt="slider 3">
+                      <div class="hero__content">
+                        <h2 class="hero__heading"><span class="text-yellow"></span><span>Sequi ea ut et est quaerat</span></h2>
+                        <p class="hero__desc">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p><a class="btn btn-rounded btn-rounded--yellow-outline mx-3">OUR MENU</a><a class="btn btn-rounded btn-rounded--yellow-outline mx-3">BOOK A TABLE</a>
+                      </div>
+                </div>
+          </div>
+          <button class="carousel-control-prev carousel-btn position-absolute top-50 start-0 translate-middle-y ms-3" type="button" data-bs-target="#carouselHeroCaptions" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Previous</span></button>
+          <button class="carousel-control-next carousel-btn position-absolute top-50 end-0 translate-middle-y me-3" type="button" data-bs-target="#carouselHeroCaptions" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Next</span></button>
+        </div>
+      </div>
+    </section>
+    <section class="about">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 col-lg-5 d-flex align-items-stretch">
+            <div class="about__video-bg"><a class="about__play-btn" href="https://www.youtube.com/watch?v=p37_Ux1G_BI"><span><em class="fas fa-play-circle"></em></span><span class="border-animation border-animation--border-1"></span><span class="border-animation border-animation--border-2"></span></a></div>
+          </div>
+          <div class="col-12 col-lg-7 d-flex flex-column justify-content-center align-items-stretch">
+            <div class="about__content">
+              <h3 class="about__heading">Eum ipsam laborum deleniti <span>velit pariatur architecto aut nihil</span></h3>
+              <p class="about__para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit</p>
+              <p class="about__para about__para--italic">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <ul class="about__list">
+                <li class="about__list-item">Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                <li class="about__list-item">Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                <li class="about__list-item">Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+              </ul>
+              <p class="about__para">Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="why-us">
+      <div class="container">
+            <article class="top-content">
+              <h2>Why choose <span>Our Restaurant</span></h2>
+              <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
+            </article>
+        <div class="row">
+          <div class="col-lg-4 d-flex flex-column flex-lg-row align-items-stretch">
+                <article class="box"><span class="box__number">01</span>
+                  <h4 class="box__heading">Lorem Ipsum</h4>
+                  <p class="box__desc">Ulamco laboris nisi ut aliquip ex ea commodo consequat. Et consectetur ducimus vero placeat</p>
+                </article>
+          </div>
+          <div class="col-lg-4 d-flex flex-column flex-lg-row align-items-stretch">
+                <article class="box"><span class="box__number">02</span>
+                  <h4 class="box__heading">Repellat Nihil</h4>
+                  <p class="box__desc">Dolorem est fugiat occaecati voluptate velit esse. Dicta veritatis dolor quod et vel dire leno para dest</p>
+                </article>
+          </div>
+          <div class="col-lg-4 d-flex flex-column flex-lg-row align-items-stretch">
+                <article class="box"><span class="box__number">03</span>
+                  <h4 class="box__heading">Ad ad velit qui</h4>
+                  <p class="box__desc">Molestiae officiis omnis illo asperiores. Aut doloribus vitae sunt debitis quo vel nam quis</p>
+                </article>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="menu">
+      <div class="container">
+            <article class="top-content">
+              <h2>Check our tasty <span>Menu</span></h2>
+              <p></p>
+            </article>
+        <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="btn btn-rounded btn-rounded--yellow-outline nav-link active" id="pills-show-all-tab" data-bs-toggle="pill" data-bs-target="#pills-show-all" type="button" role="tab" aria-controls="pills-show-all" aria-selected="true">Show All</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="btn btn-rounded btn-rounded--yellow-outline nav-link" id="pills-starters-tab" data-bs-toggle="pill" data-bs-target="#pills-starters" type="button" role="tab" aria-controls="pills-starters" aria-selected="false">Starters</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="btn btn-rounded btn-rounded--yellow-outline nav-link" id="pills-salads-tab" data-bs-toggle="pill" data-bs-target="#pills-salads" type="button" role="tab" aria-controls="pills-salads" aria-selected="false">Salads</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="btn btn-rounded btn-rounded--yellow-outline nav-link" id="pills-specialty-tab" data-bs-toggle="pill" data-bs-target="#pills-specialty" type="button" role="tab" aria-controls="pills-specialty" aria-selected="false">Specialty</button>
+          </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+          <div class="tab-pane fade show active" id="pills-show-all" role="tabpanel" aria-labelledby="pills-show-all-tab">
+            <div class="row justify-content-between">
+              <div class="col-12 col-lg-6 ps-4 pe-4">
+                    <article class="menu-item">
+                      <div class="menu-item__content"><a class="menu-item__name">Lobster Bisque</a><span class="menu-item__price">$5.95</span></div>
+                      <div class="menu-item__desc">Lorem, deren, trataro, filede, nerada</div>
+                    </article>
+              </div>
+              <div class="col-12 col-lg-6 ps-4 pe-4">
+                    <article class="menu-item">
+                      <div class="menu-item__content"><a class="menu-item__name">Bread barrel</a><span class="menu-item__price">$6.95</span></div>
+                      <div class="menu-item__desc">Lorem, deren, trataro, filede, nerada</div>
+                    </article>
+              </div>
+              <div class="col-12 col-lg-6 ps-4 pe-4">
+                    <article class="menu-item">
+                      <div class="menu-item__content"><a class="menu-item__name">Crab Cake</a><span class="menu-item__price">$7.95</span></div>
+                      <div class="menu-item__desc">A delicate crab cake served on a toasted roll with lettuce and tartar sauce</div>
+                    </article>
+              </div>
+              <div class="col-12 col-lg-6 ps-4 pe-4">
+                    <article class="menu-item">
+                      <div class="menu-item__content"><a class="menu-item__name">Caesar Selections</a><span class="menu-item__price">$8.95</span></div>
+                      <div class="menu-item__desc">Lorem, deren, trataro, filede, nerada</div>
+                    </article>
+              </div>
+              <div class="col-12 col-lg-6 ps-4 pe-4">
+                    <article class="menu-item">
+                      <div class="menu-item__content"><a class="menu-item__name">Tuscan Grilled</a><span class="menu-item__price">$9.95</span></div>
+                      <div class="menu-item__desc">Grilled chicken with provolone, artichoke hearts, and roasted red pesto</div>
+                    </article>
+              </div>
+              <div class="col-12 col-lg-6 ps-4 pe-4">
+                    <article class="menu-item">
+                      <div class="menu-item__content"><a class="menu-item__name">Mozzarella Stick</a><span class="menu-item__price">$4.95</span></div>
+                      <div class="menu-item__desc">Lorem, deren, trataro, filede, nerada</div>
+                    </article>
+              </div>
+              <div class="col-12 col-lg-6 ps-4 pe-4">
+                    <article class="menu-item">
+                      <div class="menu-item__content"><a class="menu-item__name">Greek Salad</a><span class="menu-item__price">$9.95</span></div>
+                      <div class="menu-item__desc">Fresh spinach, crisp romaine, tomatoes, and Greek olives</div>
+                    </article>
+              </div>
+              <div class="col-12 col-lg-6 ps-4 pe-4">
+                    <article class="menu-item">
+                      <div class="menu-item__content"><a class="menu-item__name">Spinach Salad</a><span class="menu-item__price">$9.95</span></div>
+                      <div class="menu-item__desc">Fresh spinach with mushrooms, hard boiled egg, and warm bacon vinaigrette</div>
+                    </article>
+              </div>
+              <div class="col-12 col-lg-6 ps-4 pe-4">
+                    <article class="menu-item">
+                      <div class="menu-item__content"><a class="menu-item__name">Lobster Roll</a><span class="menu-item__price">$12.95</span></div>
+                      <div class="menu-item__desc">Plump lobster meat, mayo and crisp lettuce on a toasted bulky roll</div>
+                    </article>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="pills-starters" role="tabpanel" aria-labelledby="pills-starters-tab">
+            <div class="row">
+              <div class="col-12 col-lg-6 ps-4 pe-4">
+                    <article class="menu-item">
+                      <div class="menu-item__content"><a class="menu-item__name">Lobster Bisque</a><span class="menu-item__price">$5.95</span></div>
+                      <div class="menu-item__desc">Lorem, deren, trataro, filede, nerada</div>
+                    </article>
+              </div>
+              <div class="col-12 col-lg-6 ps-4 pe-4">
+                    <article class="menu-item">
+                      <div class="menu-item__content"><a class="menu-item__name">Crab Cake</a><span class="menu-item__price">$7.95</span></div>
+                      <div class="menu-item__desc">A delicate crab cake served on a toasted roll with lettuce and tartar sauce</div>
+                    </article>
+              </div>
+              <div class="col-12 col-lg-6 ps-4 pe-4">
+                    <article class="menu-item">
+                      <div class="menu-item__content"><a class="menu-item__name">Mozzarella Stick</a><span class="menu-item__price">$4.95</span></div>
+                      <div class="menu-item__desc">Lorem, deren, trataro, filede, nerada</div>
+                    </article>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="pills-salads" role="tabpanel" aria-labelledby="pills-salads-tab">
+            <div class="row">
+              <div class="col-12 col-lg-6 ps-4 pe-4">
+                    <article class="menu-item">
+                      <div class="menu-item__content"><a class="menu-item__name">Caesar Selections</a><span class="menu-item__price">$8.95</span></div>
+                      <div class="menu-item__desc">Lorem, deren, trataro, filede, nerada</div>
+                    </article>
+              </div>
+              <div class="col-12 col-lg-6 ps-4 pe-4">
+                    <article class="menu-item">
+                      <div class="menu-item__content"><a class="menu-item__name">Greek Salad</a><span class="menu-item__price">$9.95</span></div>
+                      <div class="menu-item__desc">Fresh spinach, crisp romaine, tomatoes, and Greek olives</div>
+                    </article>
+              </div>
+              <div class="col-12 col-lg-6 ps-4 pe-4">
+                    <article class="menu-item">
+                      <div class="menu-item__content"><a class="menu-item__name">Spinach Salad</a><span class="menu-item__price">$9.95</span></div>
+                      <div class="menu-item__desc">Fresh spinach with mushrooms, hard boiled egg, and warm bacon vinaigrette</div>
+                    </article>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="pills-specialty" role="tabpanel" aria-labelledby="pills-specialty-tab">
+            <div class="row">
+              <div class="col-12 col-lg-6 ps-4 pe-4">
+                    <article class="menu-item">
+                      <div class="menu-item__content"><a class="menu-item__name">Bread barrel</a><span class="menu-item__price">$6.95</span></div>
+                      <div class="menu-item__desc">Lorem, deren, trataro, filede, nerada</div>
+                    </article>
+              </div>
+              <div class="col-12 col-lg-6 ps-4 pe-4">
+                    <article class="menu-item">
+                      <div class="menu-item__content"><a class="menu-item__name">Tuscan Grilled</a><span class="menu-item__price">$9.95</span></div>
+                      <div class="menu-item__desc">Grilled chicken with provolone, artichoke hearts, and roasted red pesto</div>
+                    </article>
+              </div>
+              <div class="col-12 col-lg-6 ps-4 pe-4">
+                    <article class="menu-item">
+                      <div class="menu-item__content"><a class="menu-item__name">Lobster Roll</a><span class="menu-item__price">$12.95</span></div>
+                      <div class="menu-item__desc">Plump lobster meat, mayo and crisp lettuce on a toasted bulky roll</div>
+                    </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="specials">
+      <div class="container">
+            <article class="top-content">
+              <h2>Check our <span>Specials</span></h2>
+              <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
+            </article>
+        <div class="row">
+          <div class="col-12 col-lg-3">
+            <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+              <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-first" type="button" role="tab" aria-controls="v-pills-first" aria-selected="true">Modi sit est</button>
+              <button class="nav-link" id="v-pills-second-tab" data-bs-toggle="pill" data-bs-target="#v-pills-second" type="button" role="tab" aria-controls="v-pills-second" aria-selected="false">Unde praesentium sed</button>
+              <button class="nav-link" id="v-pills-third-tab" data-bs-toggle="pill" data-bs-target="#v-pills-third" type="button" role="tab" aria-controls="v-pills-third" aria-selected="false">Pariatur explicabo vel</button>
+              <button class="nav-link" id="v-pills-fourth-tab" data-bs-toggle="pill" data-bs-target="#v-pills-fourth" type="button" role="tab" aria-controls="v-pills-fourth" aria-selected="false">Nostrum qui quasi</button>
+              <button class="nav-link" id="v-pills-fifth-tab" data-bs-toggle="pill" data-bs-target="#v-pills-fifth" type="button" role="tab" aria-controls="v-pills-fifth" aria-selected="false">Iusto ut expedita aut</button>
+            </div>
+          </div>
+          <div class="col-12 col-lg-9">
+            <div class="tab-content" id="v-pills-tabContent">
+              <div class="tab-pane fade show active" id="v-pills-first" role="tabpanel" aria-labelledby="v-pills-first-tab">
+                    <article> 
+                      <div class="row">
+                        <div class="col-lg-4 order-lg-1"><img class="img-fluid" src="./assets/images/specials-1.jpg" alt="specials 1"></div>
+                        <div class="col-lg-8">
+                          <div class="specials__heading">Architecto ut aperiam autem id</div>
+                          <div class="specials__paraItalic">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka</div>
+                          <div class="specials__paraBot">Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. Laborum eos ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. Est repellat minima eveniet eius et quis magni nihil. Consequatur dolorem quaerat quos qui similique accusamus nostrum rem vero</div>
+                        </div>
+                      </div>
+                    </article>
+              </div>
+              <div class="tab-pane fade" id="v-pills-second" role="tabpanel" aria-labelledby="v-pills-second-tab">
+                    <article> 
+                      <div class="row">
+                        <div class="col-lg-4 order-lg-1"><img class="img-fluid" src="./assets/images/specials-2.jpg" alt="specials 2"></div>
+                        <div class="col-lg-8">
+                          <div class="specials__heading">Et blanditiis nemo veritatis excepturi</div>
+                          <div class="specials__paraItalic">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka</div>
+                          <div class="specials__paraBot">Ea ipsum voluptatem consequatur quis est. Illum error ullam omnis quia et reiciendis sunt sunt est. Non aliquid repellendus itaque accusamus eius et velit ipsa voluptates. Optio nesciunt eaque beatae accusamus lerode pakto madirna desera vafle de nideran pal</div>
+                        </div>
+                      </div>
+                    </article>
+              </div>
+              <div class="tab-pane fade" id="v-pills-third" role="tabpanel" aria-labelledby="v-pills-third-tab">
+                    <article> 
+                      <div class="row">
+                        <div class="col-lg-4 order-lg-1"><img class="img-fluid" src="./assets/images/specials-3.jpg" alt="specials 3"></div>
+                        <div class="col-lg-8">
+                          <div class="specials__heading">Impedit facilis occaecati odio neque aperiam sit</div>
+                          <div class="specials__paraItalic">Eos voluptatibus quo. Odio similique illum id quidem non enim fuga. Qui natus non sunt dicta dolor et. In asperiores velit quaerat perferendis aut</div>
+                          <div class="specials__paraBot">Iure officiis odit rerum. Harum sequi eum illum corrupti culpa veritatis quisquam. Neque necessitatibus illo rerum eum ut. Commodi ipsam minima molestiae sed laboriosam a iste odio. Earum odit nesciunt fugiat sit ullam. Soluta et harum voluptatem optio quae</div>
+                        </div>
+                      </div>
+                    </article>
+              </div>
+              <div class="tab-pane fade" id="v-pills-fourth" role="tabpanel" aria-labelledby="v-pills-fourth-tab">
+                    <article> 
+                      <div class="row">
+                        <div class="col-lg-4 order-lg-1"><img class="img-fluid" src="./assets/images/specials-4.jpg" alt="specials 4"></div>
+                        <div class="col-lg-8">
+                          <div class="specials__heading">Fuga dolores inventore laboriosam ut est accusamus laboriosam dolore</div>
+                          <div class="specials__paraItalic">Totam aperiam accusamus. Repellat consequuntur iure voluptas iure porro quis delectus</div>
+                          <div class="specials__paraBot">Eaque consequuntur consequuntur libero expedita in voluptas. Nostrum ipsam necessitatibus aliquam fugiat debitis quis velit. Eum ex maxime error in consequatur corporis atque. Eligendi asperiores sed qui veritatis aperiam quia a laborum inventore</div>
+                        </div>
+                      </div>
+                    </article>
+              </div>
+              <div class="tab-pane fade" id="v-pills-fifth" role="tabpanel" aria-labelledby="v-pills-fifth-tab">
+                    <article> 
+                      <div class="row">
+                        <div class="col-lg-4 order-lg-1"><img class="img-fluid" src="./assets/images/specials-5.jpg" alt="specials 5"></div>
+                        <div class="col-lg-8">
+                          <div class="specials__heading">Est eveniet ipsam sindera pad rone matrelat sando reda</div>
+                          <div class="specials__paraItalic">Omnis blanditiis saepe eos autem qui sunt debitis porro quia.</div>
+                          <div class="specials__paraBot">Exercitationem nostrum omnis. Ut reiciendis repudiandae minus. Omnis recusandae ut non quam ut quod eius qui. Ipsum quia odit vero atque qui quibusdam amet. Occaecati sed est sint aut vitae molestiae voluptate vel</div>
+                        </div>
+                      </div>
+                    </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="event">
+      <div class="container">
+            <article class="top-content">
+              <h2>Organize Your <span>Events</span></h2>
+              <p></p>
+            </article>
+        <div class="carousel slide" id="carouselEventIndicators" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button class="active" type="button" data-bs-target="#carouselEventIndicators" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselEventIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselEventIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row pb-4 mb-5">
+                <div class="col-lg-6"><img class="d-block w-100 mb-5 mb-lg-0" src="./assets/images/event-birthday.jpg" alt="image birthday"></div>
+                <div class="col-lg-6"> 
+                      <article class="event__container">
+                        <h3 class="event__heading">Birthday Parties</h3>
+                        <div class="event__price"><span>$189</span></div>
+                        <p class="event__paraItalic">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <ul class="event__list">
+                          <li class="event__list-item">Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                          <li class="event__list-item">Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                          <li class="event__list-item">Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                        </ul>
+                        <p class="event__paraBot">Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+                      </article>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row pb-4 mb-5">
+                <div class="col-lg-6"><img class="d-block w-100 mb-5 mb-lg-0" src="./assets/images/event-private.jpg" alt="image private"></div>
+                <div class="col-lg-6"> 
+                      <article class="event__container">
+                        <h3 class="event__heading">Private Parties</h3>
+                        <div class="event__price"><span>$290</span></div>
+                        <p class="event__paraItalic">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <ul class="event__list">
+                          <li class="event__list-item">Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                          <li class="event__list-item">Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                          <li class="event__list-item">Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                        </ul>
+                        <p class="event__paraBot">Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+                      </article>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row pb-4 mb-5">
+                <div class="col-lg-6"><img class="d-block w-100 mb-5 mb-lg-0" src="./assets/images/event-custom.jpg" alt="image custom"></div>
+                <div class="col-lg-6">
+                      <article class="event__container">
+                        <h3 class="event__heading">Custom Parties</h3>
+                        <div class="event__price"><span>$99</span></div>
+                        <p class="event__paraItalic">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <ul class="event__list">
+                          <li class="event__list-item">Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                          <li class="event__list-item">Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                          <li class="event__list-item">Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                        </ul>
+                        <p class="event__paraBot">Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+                      </article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="book-a-table">
+      <div class="container">
+            <article class="top-content">
+              <h2>Book a <span>Table</span></h2>
+              <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
+            </article>
+        <form class="row shadow p-5" action="#">
+          <div class="col-lg-4 col-md-6 col-12 mb-3"> 
+            <input class="form-control form-control-lg p-3 mb-2 fs-4" id="inputName" type="text" placeholder="Your Name" required="">
+          </div>
+          <div class="col-lg-4 col-md-6 col-12 mb-3"> 
+            <input class="form-control form-control-lg p-3 mb-2 fs-4" id="inputEmail" type="Email" placeholder="Your Email" required="">
+          </div>
+          <div class="col-lg-4 col-md-6 col-12 mb-3"> 
+            <input class="form-control form-control-lg p-3 mb-2 fs-4" id="inputPhone" type="text" placeholder="Your Phone" required="">
+          </div>
+          <div class="col-lg-4 col-md-6 col-12 mb-3"> 
+            <input class="form-control form-control-lg p-3 mb-2 fs-4" id="inputDate" type="text" placeholder="Date" required="">
+          </div>
+          <div class="col-lg-4 col-md-6 col-12 mb-3"> 
+            <input class="form-control form-control-lg p-3 mb-2 fs-4" id="inputTime" type="text" placeholder="Time" required="">
+          </div>
+          <div class="col-lg-4 col-md-6 col-12 mb-3"> 
+            <input class="form-control form-control-lg p-3 mb-2 fs-4" id="inputNumberOfPeople" type="text" placeholder="# of People" required="">
+          </div>
+          <div class="col-lg-12 mb-3"> 
+            <textarea class="form-control form-control-lg p-3 mb-4 fs-4" id="message" name="message" placeholder="Message" rows="8"></textarea>
+          </div>
+          <div class="text-center mt-1">
+            <button class="btn btn-rounded btn-rounded--yellow pt-3 pb-3" type="submit">Send Message</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <section class="gallery">
+      <div class="container-fluid">
+            <article class="top-content">
+              <h2>Some photos from  <span>Our Restaurant</span></h2>
+              <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
+            </article>
+        <div class="row">
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <article class="box-img"><img class="box-img__img img-fluid" src="./assets/images/gallery-1.jpg"></article>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <article class="box-img"><img class="box-img__img img-fluid" src="./assets/images/gallery-2.jpg"></article>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <article class="box-img"><img class="box-img__img img-fluid" src="./assets/images/gallery-3.jpg"></article>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <article class="box-img"><img class="box-img__img img-fluid" src="./assets/images/gallery-4.jpg"></article>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <article class="box-img"><img class="box-img__img img-fluid" src="./assets/images/gallery-5.jpg"></article>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <article class="box-img"><img class="box-img__img img-fluid" src="./assets/images/gallery-6.jpg"></article>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <article class="box-img"><img class="box-img__img img-fluid" src="./assets/images/gallery-7.jpg"></article>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <article class="box-img"><img class="box-img__img img-fluid" src="./assets/images/gallery-8.jpg"></article>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="chefs">
+      <div class="container">
+            <article class="top-content">
+              <h2>Our Proffesional <span>Chefs</span></h2>
+              <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
+            </article>
+        <div class="row"> 
+          <div class="col-12 col-md-6 col-lg-4">
+                <article class="chef-card mt-4 mt-lg-0"><img class="chef-card__img img-fluid" src="./assets/images/chefs-1.jpg" alt="Chef 1">
+                  <div class="chef-card__info">
+                    <div class="chef-card__name">Walter White</div>
+                    <div class="chef-card__position">Master Chef</div>
+                    <ul class="chef-card__social-list">
+                      <li><a href="https://twitter.com"><em class="fab fa-twitter"></em></a></li>
+                      <li><a href="https://facebook.com"><em class="fab fa-facebook"></em></a></li>
+                      <li><a href="https://instagram.com"><em class="fab fa-instagram"></em></a></li>
+                      <li><a href="https://www.linkedin.com/"><em class="fab fa-linkedin"></em></a></li>
+                    </ul>
+                  </div>
+                </article>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+                <article class="chef-card mt-4 mt-lg-0"><img class="chef-card__img img-fluid" src="./assets/images/chefs-2.jpg" alt="Chef 2">
+                  <div class="chef-card__info">
+                    <div class="chef-card__name">Sarah Jhonson</div>
+                    <div class="chef-card__position">Master Chef</div>
+                    <ul class="chef-card__social-list">
+                      <li><a href="https://twitter.com"><em class="fab fa-twitter"></em></a></li>
+                      <li><a href="https://facebook.com"><em class="fab fa-facebook"></em></a></li>
+                      <li><a href="https://instagram.com"><em class="fab fa-instagram"></em></a></li>
+                      <li><a href="https://www.linkedin.com/"><em class="fab fa-linkedin"></em></a></li>
+                    </ul>
+                  </div>
+                </article>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+                <article class="chef-card mt-4 mt-lg-0"><img class="chef-card__img img-fluid" src="./assets/images/chefs-3.jpg" alt="Chef 3">
+                  <div class="chef-card__info">
+                    <div class="chef-card__name">Walter White</div>
+                    <div class="chef-card__position">Master Chef</div>
+                    <ul class="chef-card__social-list">
+                      <li><a href="https://twitter.com"><em class="fab fa-twitter"></em></a></li>
+                      <li><a href="https://facebook.com"><em class="fab fa-facebook"></em></a></li>
+                      <li><a href="https://instagram.com"><em class="fab fa-instagram"></em></a></li>
+                      <li><a href="https://www.linkedin.com/"><em class="fab fa-linkedin"></em></a></li>
+                    </ul>
+                  </div>
+                </article>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="testimonials">
+      <div class="container">
+        <div class="carousel slide" id="carouselTestimonialIndicators" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button class="active" type="button" data-bs-target="#carouselTestimonialIndicators" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselTestimonialIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselTestimonialIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselTestimonialIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselTestimonialIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+                  <article class="test-info"><img class="test-info__img d-block" src="./assets/images/testimonials-1.jpg">
+                    <h3 class="test-info__name">Saul Goodman</h3>
+                    <h4 class="test-info__position">Ceo &amp; Founder</h4>
+                    <div class="test-info__star"><em class="fas fa-star"></em><em class="fas fa-star"></em><em class="fas fa-star"></em><em class="fas fa-star"></em><em class="fas fa-star"></em>
+                    </div>
+                    <p class="test-info__quote"><em class="fas fa-quote-left me-3 fs-5"></em><span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</span><em class="fas fa-quote-right ps-3 fs-5"></em></p>
+                  </article>
+            </div>
+            <div class="carousel-item">
+                  <article class="test-info"><img class="test-info__img d-block" src="./assets/images/testimonials-2.jpg">
+                    <h3 class="test-info__name">Sara Wilsson</h3>
+                    <h4 class="test-info__position">Designer</h4>
+                    <div class="test-info__star"><em class="fas fa-star"></em><em class="fas fa-star"></em><em class="fas fa-star"></em><em class="fas fa-star"></em><em class="far fa-star"></em>
+                    </div>
+                    <p class="test-info__quote"><em class="fas fa-quote-left me-3 fs-5"></em><span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span><em class="fas fa-quote-right ps-3 fs-5"></em></p>
+                  </article>
+            </div>
+            <div class="carousel-item">
+                  <article class="test-info"><img class="test-info__img d-block" src="./assets/images/testimonials-3.jpg">
+                    <h3 class="test-info__name">Jena Karlis</h3>
+                    <h4 class="test-info__position">Store Owner</h4>
+                    <div class="test-info__star"><em class="fas fa-star"></em><em class="fas fa-star"></em><em class="far fa-star"></em><em class="far fa-star"></em><em class="far fa-star"></em>
+                    </div>
+                    <p class="test-info__quote"><em class="fas fa-quote-left me-3 fs-5"></em><span>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</span><em class="fas fa-quote-right ps-3 fs-5"></em></p>
+                  </article>
+            </div>
+            <div class="carousel-item">
+                  <article class="test-info"><img class="test-info__img d-block" src="./assets/images/testimonials-4.jpg">
+                    <h3 class="test-info__name">Matt Brandon</h3>
+                    <h4 class="test-info__position">Freelancer</h4>
+                    <div class="test-info__star"><em class="fas fa-star"></em><em class="fas fa-star"></em><em class="fas fa-star"></em><em class="fas fa-star"></em><em class="fas fa-star"></em>
+                    </div>
+                    <p class="test-info__quote"><em class="fas fa-quote-left me-3 fs-5"></em><span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.</span><em class="fas fa-quote-right ps-3 fs-5"></em></p>
+                  </article>
+            </div>
+            <div class="carousel-item">
+                  <article class="test-info"><img class="test-info__img d-block" src="./assets/images/testimonials-5.jpg">
+                    <h3 class="test-info__name">John Larson</h3>
+                    <h4 class="test-info__position">Entrepreneur</h4>
+                    <div class="test-info__star"><em class="fas fa-star"></em><em class="fas fa-star"></em><em class="fas fa-star"></em><em class="far fa-star"></em><em class="far fa-star"></em>
+                    </div>
+                    <p class="test-info__quote"><em class="fas fa-quote-left me-3 fs-5"></em><span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</span><em class="fas fa-quote-right ps-3 fs-5"></em></p>
+                  </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact">
+      <div class="container-fluid">
+            <article class="top-content">
+              <h2>Us<span>Contact </span></h2>
+              <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
+            </article>
+        <iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3833.715598447407!2d108.21780861528562!3d16.080241488874165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3142183b8dc2697d%3A0xc105565d68b6ad90!2zMTYgTMO9IFRoxrDhu51uZyBLaeG7h3QsIFRo4bqhY2ggVGhhbmcsIEjhuqNpIENow6J1LCDEkMOgIE7hurVuZyA1NTAwMDAsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1626509773735!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+      <div class="container mt-5">
+        <div class="contact__info">
+          <div class="row p-5 shadow">
+            <div class="col-lg-3 col-md-6 col-12">
+                  <article class="contact-info"><em class="icon fas fa-map-marker-alt"></em>
+                    <h4 class="contact-info__heading">Location:</h4>
+                    <p class="contact-info__desc"><span>A108 Adam Street</span><br><span>New York, NY 535022</span></p>
+                  </article>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+                  <article class="contact-info"><em class="icon far fa-clock"></em>
+                    <h4 class="contact-info__heading">Open Hours:</h4>
+                    <p class="contact-info__desc"><span>Monday-Saturday:</span><br><span>11:00 AM - 2300 PM</span></p>
+                  </article>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+                  <article class="contact-info"><em class="icon far fa-envelope"></em>
+                    <h4 class="contact-info__heading">Email:</h4>
+                    <p class="contact-info__desc"><span>info@example.com</span><br><span>contact@example.com</span></p>
+                  </article>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+                  <article class="contact-info"><em class="icon fas fa-mobile-alt"></em>
+                    <h4 class="contact-info__heading">Call:</h4>
+                    <p class="contact-info__desc"><span>+1 5589 55488 51</span><br><span>+1 5589 22475 14</span></p>
+                  </article>
+            </div>
+          </div>
+        </div>
+        <form class="row shadow p-5" action="#">
+          <div class="col-md-6 col-12 mb-3"> 
+            <input class="form-control form-control-lg p-3 mb-2 fs-4" id="inputName" type="text" placeholder="Your Name" required="">
+          </div>
+          <div class="col-md-6 col-12 mb-3"> 
+            <input class="form-control form-control-lg p-3 mb-2 fs-4" id="inputEmail" type="Email" placeholder="Your Email" required="">
+          </div>
+          <div class="col-12 mb-3"> 
+            <input class="form-control form-control-lg p-3 mb-2 fs-4" id="inputSubject" type="text" placeholder="Subject" required="">
+          </div>
+          <div class="col-12 mb-3"> 
+            <textarea class="form-control form-control-lg p-3 mb-4 fs-4" id="message" name="message" placeholder="Message" rows="8"></textarea>
+          </div>
+          <div class="text-center mt-1">
+            <button class="btn btn-rounded btn-rounded--yellow pt-3 pb-3" type="submit">Send Message</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container py-5">
+            <article class="top-content">
+              <h2><span>Delicious</span></h2>
+              <p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p>
+            </article>
+        <div class="footer__social-links"><a href="https://twitter.com"><em class="icon--white fab fa-twitter"></em></a><a href="https://facebook.com"><em class="icon--white fab fa-facebook"></em></a><a href="https://instagram.com"><em class="icon--white fab fa-instagram"></em></a><a href="https://skype.com"><em class="icon--white fab fa-skype"></em></a><a href="https://www.linkedin.com/"><em class="icon--white fab fa-linkedin"></em></a>
+        </div>
+        <div class="footer__copyright">&copy; Copyright <strong><span>Delicious</span></strong>. All Rights Reserved</div>
+        <div class="footer__credits">Designed by <a href="#!">BootstrapMade</a></div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"> </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"> </script>
+  </body>
+</html>

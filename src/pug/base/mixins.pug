@@ -1,0 +1,139 @@
+
+//- carousel content child 
+mixin carouselContentChild(imgUrl, imgName, yellowHeading, heading, desc, btnName)
+    img.d-block(src= imgUrl, alt= imgName)
+    .hero__content
+        h2.hero__heading
+            span.text-yellow= yellowHeading
+            span= heading
+        p.hero__desc= desc
+        each item in btnName
+            a.btn.btn-rounded.btn-rounded--yellow-outline.mx-3= item
+
+//- Mixin for carousel conent of bootstrap
+mixin carouselContent(imgUrl, imgName, yellowHeading, heading, desc, btnName)
+    .carousel-item(class= yellowHeading !== '' ? 'active' : null)
+        +carouselContentChild(imgUrl, imgName, yellowHeading, heading, desc, btnName)
+
+
+//- Mixin for subnav
+mixin subnav(subnavItem, subnavDeepItem)
+    ul#subnav.subnav
+        +subnavList(subnavItem, subnavDeepItem)
+
+//- Mixin for subnav list item
+mixin subnavList(subnavItem, subnavDeepItem)
+    each item in subnavItem
+        li.subnav__item
+            if item === 'Deep Drop Down'
+                a.subnav__item-link(href="#")= item
+                em.fas.fa-chevron-right
+                +subnavRight(subnavDeepItem)
+            else
+                a.subnav__item-link(href="#")= item
+
+//- Mixin for subnav deep   
+mixin subnavRight(subnavItem)
+    ul#subnav-deep.subnav.subnav--right
+        +subnavList(subnavItem)
+
+//- Mixin for top-content
+mixin top-content(topContent)
+    article.top-content
+        h2= topContent.heading
+            span= topContent.yellowHeading
+        p= topContent.desc
+
+//- Mixin for box 
+mixin box(boxContent)
+    article.box
+        span.box__number= boxContent.number
+        h4.box__heading= boxContent.heading
+        p.box__desc= boxContent.desc
+
+mixin menuItem(item)
+    article.menu-item
+        .menu-item__content
+            a.menu-item__name= item.name
+            span.menu-item__price= item.price
+        .menu-item__desc= item.desc
+
+mixin specialInfo(item)
+    article 
+        .row
+            .col-lg-4.order-lg-1
+                img.img-fluid(src= item.imgUrl, alt= item.imgName)
+            .col-lg-8
+                .specials__heading= item.heading 
+                .specials__paraItalic= item.paraItalic
+                .specials__paraBot= item.paraBot
+
+mixin eventInfo(item)
+    article.event__container
+        h3.event__heading= item.heading
+        .event__price
+            span= item.price
+        p.event__paraItalic= item.paraItalic
+        ul.event__list
+            each listItem in item.list
+                li.event__list-item= listItem
+        p.event__paraBot= item.paraBot
+        
+mixin imgBox(item)
+    article.box-img
+        img.box-img__img.img-fluid(src= item)
+
+mixin chefCard(item)
+    article.chef-card.mt-4.mt-lg-0
+        img.chef-card__img.img-fluid(src=item.imgUrl, alt=item.imgAlt)
+        .chef-card__info
+            .chef-card__name= item.name
+            .chef-card__position= item.position
+            ul.chef-card__social-list
+                each socialItem in item.socialList
+                    li
+                        a(href= socialItem.link)
+                            em(class= socialItem.icon)
+
+mixin star(number)
+    -
+        var n = 1
+        var k = number + 1
+    while n <= number 
+        em.fas.fa-star
+        - n++
+    while k <= 5
+        em.far.fa-star
+        - k++
+
+mixin testimonialInfo(item)
+    article.test-info
+        img.test-info__img.d-block(src= item.imgUrl alt= imgAlt)
+        h3.test-info__name= item.name
+        h4.test-info__position= item.position
+        .test-info__star
+            +star(item.star)
+        p.test-info__quote
+            em.fas.fa-quote-left.me-3.fs-5
+            span= item.quote
+            em.fas.fa-quote-right.ps-3.fs-5
+
+mixin contactItem(item)
+    article.contact-info
+        em.icon(class= item.icon)
+        h4.contact-info__heading= item.heading
+        p.contact-info__desc
+            span= item.desc1
+            br
+            span= item.desc2
+
+        
+
+    
+        
+            
+
+        
+
+
+                

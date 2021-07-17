@@ -1,0 +1,59 @@
+.btn-rounded {
+  padding: 1rem 2.5rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  border-radius: 50rem !important;
+  border: 0.2rem solid transparent;
+  transition: all 0.25s ease;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  -webkit-border-radius: 50rem !important;
+  -moz-border-radius: 50rem !important;
+  -ms-border-radius: 50rem !important;
+  -o-border-radius: 50rem !important;
+
+  &--yellow {
+    color: $white;
+    background-color: $yellow;
+    &:hover {
+      background-color: $yellow--hover;
+      color: $white;
+    }
+  }
+
+  &--yellow-outline {
+    border: 2px solid #ffb03b !important;
+    color: $text !important;
+    border-color: $yellow !important;
+    &:hover {
+      transform: scale(1.05);
+      -webkit-transform: scale(1.05);
+      -moz-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+      -o-transform: scale(1.05);
+      color: $white !important;
+      background-color: $yellow;
+    }
+  }
+}
+
+.carousel-btn {
+  height: 56px;
+  width: 56px;
+  border-radius: 50%;
+  background-color: $yellow;
+  transition: all 0.25s ease;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  &--medium {
+    height: 80px;
+    width: 80px;
+  }
+  &:hover {
+    transform: scale(1.1);
+  }
+}

@@ -1,0 +1,34 @@
+include ../base/mixins.pug
+
+header.header
+    .container-xl
+        .row
+            .header__top
+                .top-section
+                    em.fas.fa-mobile-alt
+                    span +1 5589 55488 55
+                .top-section
+                    em.far.fa-clock
+                    span Mon-Sat: 11:00 AM - 23:00 PM
+        .row
+            nav.nav.navbar.navbar-expand-lg.navbar-dark
+                a.nav__logo(href="#")
+                    h1 Delicious
+                button.btn.btn-rounded.btn-rounded--yellow(type="button") Book a table
+                button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarNav' aria-controls='navbarNav' aria-expanded='true' aria-label='Toggle navigation')
+                    span.navbar-toggler-icon
+                #navbarNav.collapse.navbar-collapse.justify-content-end
+                    ul.nav__list 
+                        each item in navList
+                            if(item === 'Home')
+                                li.nav__item
+                                    a.nav__item-link.active(href="#")= item
+                            else if (item === 'Drop Down')
+                                li.nav__item
+                                    a.nav__item-link(href="#")= item
+                                        em.fas.fa-chevron-down.ms-2
+                                    +subnav(subnavItem, subnavDeepItem)
+                            else
+                                li.nav__item
+                                    a.nav__item-link(href="#")= item
+
