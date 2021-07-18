@@ -594,7 +594,8 @@ body {
     background-position: center center;
     margin: 0 -7.5px;
     min-height: 400px;
-    width: -webkit-fill-available; }
+    width: -webkit-fill-available;
+    width: -moz-available; }
   .about__play-btn {
     position: absolute;
     top: 50%;
