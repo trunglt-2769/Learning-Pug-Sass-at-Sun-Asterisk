@@ -1,139 +1,155 @@
-
-//- carousel content child 
-mixin carouselContentChild(imgUrl, imgName, yellowHeading, heading, desc, btnName)
-    img.d-block(src= imgUrl, alt= imgName)
-    .hero__content
-        h2.hero__heading
-            span.text-yellow= yellowHeading
-            span= heading
-        p.hero__desc= desc
-        each item in btnName
-            a.btn.btn-rounded.btn-rounded--yellow-outline.mx-3= item
-
-//- Mixin for carousel conent of bootstrap
-mixin carouselContent(imgUrl, imgName, yellowHeading, heading, desc, btnName)
-    .carousel-item(class= yellowHeading !== '' ? 'active' : null)
-        +carouselContentChild(imgUrl, imgName, yellowHeading, heading, desc, btnName)
-
+//- Mixin for hero content
+mixin heroInfo(item)
+	article
+		img.d-block(src= item.imgUrl, alt= item.imgName)
+		.hero__content
+			h2.hero__heading
+				span.text-yellow= item.yellowHeading
+				span= item.heading
+			p.hero__desc= item.desc
+			each name in item.btnName
+				a.btn.btn-rounded.btn-rounded--yellow-outline.mx-3= name
 
 //- Mixin for subnav
 mixin subnav(subnavItem, subnavDeepItem)
-    ul#subnav.subnav
-        +subnavList(subnavItem, subnavDeepItem)
+	ul#subnav.subnav
+		+subnavList(subnavItem, subnavDeepItem)
 
 //- Mixin for subnav list item
 mixin subnavList(subnavItem, subnavDeepItem)
-    each item in subnavItem
-        li.subnav__item
-            if item === 'Deep Drop Down'
-                a.subnav__item-link(href="#")= item
-                em.fas.fa-chevron-right
-                +subnavRight(subnavDeepItem)
-            else
-                a.subnav__item-link(href="#")= item
+	each item in subnavItem
+		li.subnav__item
+			if item === 'Deep Drop Down'
+				a.subnav__item-link(href="#!")= item
+				em.fas.fa-chevron-right
+				+subnavRight(subnavDeepItem)
+			else
+				a.subnav__item-link(href="#!")= item
 
 //- Mixin for subnav deep   
 mixin subnavRight(subnavItem)
-    ul#subnav-deep.subnav.subnav--right
-        +subnavList(subnavItem)
+	ul#subnav-deep.subnav.subnav--right
+		+subnavList(subnavItem)
 
 //- Mixin for top-content
 mixin top-content(topContent)
-    article.top-content
-        h2= topContent.heading
-            span= topContent.yellowHeading
-        p= topContent.desc
+	article.top-content
+		h2= topContent.heading
+			span.text-yellow= topContent.yellowHeading
+		p= topContent.desc
 
 //- Mixin for box 
 mixin box(boxContent)
-    article.box
-        span.box__number= boxContent.number
-        h4.box__heading= boxContent.heading
-        p.box__desc= boxContent.desc
+	article.box
+		span.box__number= boxContent.number
+		h4.box__heading= boxContent.heading
+		p.box__desc= boxContent.desc
 
 mixin menuItem(item)
-    article.menu-item
-        .menu-item__content
-            a.menu-item__name= item.name
-            span.menu-item__price= item.price
-        .menu-item__desc= item.desc
+	article.menu-item
+		.menu-item__content
+			a.menu-item__name= item.name
+			span.menu-item__price= item.price
+		.menu-item__desc= item.desc
 
+//- Mixin for special content
 mixin specialInfo(item)
-    article 
-        .row
-            .col-lg-4.order-lg-1
-                img.img-fluid(src= item.imgUrl, alt= item.imgName)
-            .col-lg-8
-                .specials__heading= item.heading 
-                .specials__paraItalic= item.paraItalic
-                .specials__paraBot= item.paraBot
+	article 
+		.row
+			.col-lg-4.order-lg-1
+				img.img-fluid(src= item.imgUrl, alt= item.imgName)
+			.col-lg-8
+				.specials__heading= item.heading 
+				.specials__paraItalic= item.paraItalic
+				.specials__paraBot= item.paraBot
 
+//- Mixin for event content
 mixin eventInfo(item)
-    article.event__container
-        h3.event__heading= item.heading
-        .event__price
-            span= item.price
-        p.event__paraItalic= item.paraItalic
-        ul.event__list
-            each listItem in item.list
-                li.event__list-item= listItem
-        p.event__paraBot= item.paraBot
-        
+	article.event__container
+		.row.pb-4.mb-5
+			.col-lg-6
+				img.d-block.w-100.mb-5.mb-lg-0(src= item.imgUrl, alt= item.imgAlt)
+			.col-lg-6
+				h3.event__heading= item.heading
+				.event__price
+					span= item.price
+				p.event__paraItalic= item.paraItalic
+				ul.event__list
+					each listItem in item.list
+						li.event__list-item= listItem
+				p.event__paraBot= item.paraBot
+
+//- Mixin for image of gallery
 mixin imgBox(item)
-    article.box-img
-        img.box-img__img.img-fluid(src= item)
+	article.box-img
+		img.box-img__img.img-fluid(src= item)
 
+//- Mixin for chef card
 mixin chefCard(item)
-    article.chef-card.mt-4.mt-lg-0
-        img.chef-card__img.img-fluid(src=item.imgUrl, alt=item.imgAlt)
-        .chef-card__info
-            .chef-card__name= item.name
-            .chef-card__position= item.position
-            ul.chef-card__social-list
-                each socialItem in item.socialList
-                    li
-                        a(href= socialItem.link)
-                            em(class= socialItem.icon)
+	article.chef-card.mt-4.mt-lg-0
+		img.chef-card__img.img-fluid(src=item.imgUrl, alt=item.imgAlt)
+		.chef-card__info
+			.chef-card__name= item.name
+			.chef-card__position= item.position
+			ul.chef-card__social-list
+				each socialItem in item.socialList
+					li
+						a(href= socialItem.link)
+							em(class= socialItem.icon)
 
+//- Mixin for show star depend on number
 mixin star(number)
-    -
-        var n = 1
-        var k = number + 1
-    while n <= number 
-        em.fas.fa-star
-        - n++
-    while k <= 5
-        em.far.fa-star
-        - k++
+	-
+		var n = 1
+		var k = number + 1
+	while n <= number 
+		em.fas.fa-star
+		- n++
+	while k <= 5
+		em.far.fa-star
+		- k++
 
+//- Mixin for testimonial content
 mixin testimonialInfo(item)
-    article.test-info
-        img.test-info__img.d-block(src= item.imgUrl alt= imgAlt)
-        h3.test-info__name= item.name
-        h4.test-info__position= item.position
-        .test-info__star
-            +star(item.star)
-        p.test-info__quote
-            em.fas.fa-quote-left.me-3.fs-5
-            span= item.quote
-            em.fas.fa-quote-right.ps-3.fs-5
+	article.test-info
+		img.test-info__img.d-block(src= item.imgUrl alt= imgAlt)
+		h3.test-info__name= item.name
+		h4.test-info__position= item.position
+		.test-info__star
+			+star(item.star)
+		p.test-info__quote
+			em.fas.fa-quote-left.me-3.fs-5
+			span= item.quote
+			em.fas.fa-quote-right.ps-3.fs-5
 
+//- Mixin for contact information
 mixin contactItem(item)
-    article.contact-info
-        em.icon(class= item.icon)
-        h4.contact-info__heading= item.heading
-        p.contact-info__desc
-            span= item.desc1
-            br
-            span= item.desc2
+	article.contact-info
+		em.icon(class= item.icon)
+		h4.contact-info__heading= item.heading
+		p.contact-info__desc
+			span= item.desc1
+			br
+			span= item.desc2
 
-        
-
-    
-        
-            
-
-        
-
-
-                
+//- Mixin for carousel of bootstrap
+mixin carousel(id, infoData, infoMixin, controlBtn= true)
+	.carousel.slide(id= id, data-bs-ride='carousel')
+		.carousel-indicators
+			- var count = 0
+			each item in infoData
+				- count++
+				button(class= count === 1 ? 'active' : null, type='button', data-bs-target=`#${id}`, data-bs-slide-to=`${count-1}`, aria-current= count === 1 ? 'true' : null, aria-label=`Slide ${count}`)
+		.carousel-inner
+			- var count = 0
+			each item in infoData
+				- count++
+				.carousel-item(class= count === 1 ? 'active' : null)
+					+#{infoMixin}(item)
+		if controlBtn
+			button.carousel-control-prev.carousel-btn.position-absolute.top-50.start-0.translate-middle-y.ms-3(type='button' data-bs-target=`#${id}` data-bs-slide='prev')
+				span.carousel-control-prev-icon(aria-hidden='true')
+				span.visually-hidden Previous
+			button.carousel-control-next.carousel-btn.position-absolute.top-50.end-0.translate-middle-y.me-3(type='button' data-bs-target=`#${id}` data-bs-slide='next')
+				span.carousel-control-next-icon(aria-hidden='true')
+				span.visually-hidden Next

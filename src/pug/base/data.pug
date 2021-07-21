@@ -1,454 +1,482 @@
 - 
-    const navList = ['Home', 'About', 'Menu', 'Specials', 'Event', 'Chefs', 'Gallery', 'Drop Down', 'Contact']
-    const heroInfo = [
-        {
-            imgUrl: './assets/images/slider/slide-1.jpg',
-            imgName: 'slider 1',
-            yellowHeading: 'Delicious ',
-            heading: 'Restaurant',
-            desc: 'Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.',
-            btnName: ['OUR MENU', 'BOOK A TABLE']
-        },
-        {
-            imgUrl: './assets/images/slider/slide-2.jpg',
-            imgName: 'slider 2',
-            yellowHeading: '',
-            heading: 'Lorem Ipsum Dolor',
-            desc: 'Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.',
-            btnName: ['OUR MENU', 'BOOK A TABLE']
-        },
-        {
-            imgUrl: './assets/images/slider/slide-3.jpg',
-            imgName: 'slider 3',
-            yellowHeading: '',
-            heading: 'Sequi ea ut et est quaerat',
-            desc: 'Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.',
-            btnName: ['OUR MENU', 'BOOK A TABLE']
-        }
-    ]
-    const subnavItem = ['Drop Down 1', 'Deep Drop Down', 'Drop Down 2', 'Drop Down 3', 'Drop Down 4']
-    const subnavDeepItem = ['Deep Drop Down 1', 'Deep Drop Down 2', 'Deep Drop Down 3', 'Deep Drop Down 4', 'Deep Drop Down 5']
+	const navList = ['Home', 'About', 'Menu', 'Specials', 'Event', 'Chefs', 'Gallery', 'Drop Down', 'Contact']
+	const herosInfo = [
+		{
+			imgUrl: '../assets/images/slide-1.jpg',
+			imgName: 'slider 1',
+			yellowHeading: 'Delicious ',
+			heading: 'Restaurant',
+			desc: 'Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.',
+			btnName: ['OUR MENU', 'BOOK A TABLE']
+		},
+		{
+			imgUrl: '../assets/images/slide-2.jpg',
+			imgName: 'slider 2',
+			yellowHeading: '',
+			heading: 'Lorem Ipsum Dolor',
+			desc: 'Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.',
+			btnName: ['OUR MENU', 'BOOK A TABLE']
+		},
+		{
+			imgUrl: '../assets/images/slide-3.jpg',
+			imgName: 'slider 3',
+			yellowHeading: '',
+			heading: 'Sequi ea ut et est quaerat',
+			desc: 'Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.',
+			btnName: ['OUR MENU', 'BOOK A TABLE']
+		}
+	]
+	const subnavItem = ['Drop Down 1', 'Deep Drop Down', 'Drop Down 2', 'Drop Down 3', 'Drop Down 4']
+	const subnavDeepItem = ['Deep Drop Down 1', 'Deep Drop Down 2', 'Deep Drop Down 3', 'Deep Drop Down 4', 'Deep Drop Down 5']
 
-    const aboutInfo = [
-        {
-            heading: 'Eum ipsam laborum deleniti ',
-            strongHeading: 'velit pariatur architecto aut nihil',
-            paraTop: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit',
-            paraItalic: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-            list: ['Ullamco laboris nisi ut aliquip ex ea commodo consequat.', 'Duis aute irure dolor in reprehenderit in voluptate velit.', 'Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.'],
-            paraBot: 'Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum'
-        }
-    ]
+	const aboutInfo = [
+		{
+			heading: 'Eum ipsam laborum deleniti ',
+			strongHeading: 'velit pariatur architecto aut nihil',
+			paraTop: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit',
+			paraItalic: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+			list: ['Ullamco laboris nisi ut aliquip ex ea commodo consequat.', 'Duis aute irure dolor in reprehenderit in voluptate velit.', 'Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.'],
+			paraBot: 'Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum'
+		}
+	]
 
-    const whyUsTitle = {
-        heading: 'Why choose ',
-        yellowHeading: 'Our Restaurant',
-        desc: 'Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.'
-    }
+	const whyUs = {
+		title: {
+			heading: 'Why choose ',
+			yellowHeading: 'Our Restaurant',
+			desc: 'Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.'
+		},
+		box: [
+			{
+				number: '01',
+				heading: 'Lorem Ipsum',
+				desc: 'Ulamco laboris nisi ut aliquip ex ea commodo consequat. Et consectetur ducimus vero placeat'
+			},
+					{
+				number: '02',
+				heading: 'Repellat Nihil',
+				desc: 'Dolorem est fugiat occaecati voluptate velit esse. Dicta veritatis dolor quod et vel dire leno para dest'
+			},
+					{
+				number: '03',
+				heading: 'Ad ad velit qui',
+				desc: 'Molestiae officiis omnis illo asperiores. Aut doloribus vitae sunt debitis quo vel nam quis'
+			}
+		]
+	}
 
-    const whyUsBox = [
-        {
-            number: '01',
-            heading: 'Lorem Ipsum',
-            desc: 'Ulamco laboris nisi ut aliquip ex ea commodo consequat. Et consectetur ducimus vero placeat'
-        },
-                {
-            number: '02',
-            heading: 'Repellat Nihil',
-            desc: 'Dolorem est fugiat occaecati voluptate velit esse. Dicta veritatis dolor quod et vel dire leno para dest'
-        },
-                {
-            number: '03',
-            heading: 'Ad ad velit qui',
-            desc: 'Molestiae officiis omnis illo asperiores. Aut doloribus vitae sunt debitis quo vel nam quis'
-        }
-    ]
+	const menu = {
+		title: {
+			heading: 'Check our tasty ',
+			yellowHeading: 'Menu'
+		},
+		category: [
+			{
+				name: "Show all",
+				controlName: 'show-all',
+				list: [
+					{
+						name: 'Lobster Bisque',
+						price: '$5.95',
+						desc: 'Lorem, deren, trataro, filede, nerada'
+					},
+					{
+						name: 'Bread barrel',
+						price: '$6.95',
+						desc: 'Lorem, deren, trataro, filede, nerada'
+					},
+					{
+						name: 'Crab Cake',
+						price: '$7.95',
+						desc: 'A delicate crab cake served on a toasted roll with lettuce and tartar sauce'
+					},
+					{
+						name: 'Caesar Selections',
+						price: '$8.95',
+						desc: 'Lorem, deren, trataro, filede, nerada'
+					},
+					{
+						name: 'Tuscan Grilled',
+						price: '$9.95',
+						desc: 'Grilled chicken with provolone, artichoke hearts, and roasted red pesto'
+					},
+					{
+						name: 'Mozzarella Stick',
+						price: '$4.95',
+						desc: 'Lorem, deren, trataro, filede, nerada'
+					},
+					{
+						name: 'Greek Salad',
+						price: '$9.95',
+						desc: 'Fresh spinach, crisp romaine, tomatoes, and Greek olives'
+					},
+					{
+						name: 'Spinach Salad',
+						price: '$9.95',
+						desc: 'Fresh spinach with mushrooms, hard boiled egg, and warm bacon vinaigrette'
+					},
+					{
+						name: 'Lobster Roll',
+						price: '$12.95',
+						desc: 'Plump lobster meat, mayo and crisp lettuce on a toasted bulky roll'
+					}      
+				]
+			},
+			{
+				name: "Starters",
+				controlName: 'starters',
+				list: [
+					{
+						name: 'Lobster Bisque',
+						price: '$5.95',
+						desc: 'Lorem, deren, trataro, filede, nerada'
+					},
+					{
+						name: 'Crab Cake',
+						price: '$7.95',
+						desc: 'A delicate crab cake served on a toasted roll with lettuce and tartar sauce'
+					},
+					{
+						name: 'Mozzarella Stick',
+						price: '$4.95',
+						desc: 'Lorem, deren, trataro, filede, nerada'
+					}
+				]
+			},
+			{
+				name: "Salads",
+				controlName: 'salads',
+				list: [
+					{
+						name: 'Caesar Selections',
+						price: '$8.95',
+						desc: 'Lorem, deren, trataro, filede, nerada'
+					},
+					{
+						name: 'Greek Salad',
+						price: '$9.95',
+						desc: 'Fresh spinach, crisp romaine, tomatoes, and Greek olives'
+					},
+					{
+						name: 'Spinach Salad',
+						price: '$9.95',
+						desc: 'Fresh spinach with mushrooms, hard boiled egg, and warm bacon vinaigrette'
+					}   
+				]
+			},
+			{
+				name: "Specialty",
+				list: [
+					{
+						name: 'Bread barrel',
+						price: '$6.95',
+						desc: 'Lorem, deren, trataro, filede, nerada'
+					},
+					{
+						name: 'Tuscan Grilled',
+						price: '$9.95',
+						desc: 'Grilled chicken with provolone, artichoke hearts, and roasted red pesto'
+					},
+					{
+						name: 'Lobster Roll',
+						price: '$12.95',
+						desc: 'Plump lobster meat, mayo and crisp lettuce on a toasted bulky roll'
+					}      
+				]
+			}
+		]
+	}
 
-    const menuTitle = {
-        heading: 'Check our tasty ',
-        yellowHeading: 'Menu'
-    }
+	const specials = {
+		title: {
+			heading: 'Check our ',
+			yellowHeading: 'Specials',
+			desc: 'Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.'
+		},
+		name: ['Modi sit est', 'Unde praesentium sed', 'Pariatur explicabo vel', 'Nostrum qui quasi', 'Iusto ut expedita aut'],
+		info: [
+			{
+				heading: 'Architecto ut aperiam autem id',
+				paraItalic: 'Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka',
+				paraBot: 'Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. Laborum eos ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. Est repellat minima eveniet eius et quis magni nihil. Consequatur dolorem quaerat quos qui similique accusamus nostrum rem vero',
+				imgUrl: '../assets/images/specials-1.jpg',
+				imgName: 'specials 1'
+			},
+			{
+				heading: 'Et blanditiis nemo veritatis excepturi',
+				paraItalic: 'Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka',
+				paraBot: 'Ea ipsum voluptatem consequatur quis est. Illum error ullam omnis quia et reiciendis sunt sunt est. Non aliquid repellendus itaque accusamus eius et velit ipsa voluptates. Optio nesciunt eaque beatae accusamus lerode pakto madirna desera vafle de nideran pal',
+				imgUrl: '../assets/images/specials-2.jpg',
+				imgName: 'specials 2'
+			},
+			{
+				heading: 'Impedit facilis occaecati odio neque aperiam sit',
+				paraItalic: 'Eos voluptatibus quo. Odio similique illum id quidem non enim fuga. Qui natus non sunt dicta dolor et. In asperiores velit quaerat perferendis aut',
+				paraBot: 'Iure officiis odit rerum. Harum sequi eum illum corrupti culpa veritatis quisquam. Neque necessitatibus illo rerum eum ut. Commodi ipsam minima molestiae sed laboriosam a iste odio. Earum odit nesciunt fugiat sit ullam. Soluta et harum voluptatem optio quae',
+				imgUrl: '../assets/images/specials-3.jpg',
+				imgName: 'specials 3'
+			},
+			{
+				heading: 'Fuga dolores inventore laboriosam ut est accusamus laboriosam dolore',
+				paraItalic: 'Totam aperiam accusamus. Repellat consequuntur iure voluptas iure porro quis delectus',
+				paraBot: 'Eaque consequuntur consequuntur libero expedita in voluptas. Nostrum ipsam necessitatibus aliquam fugiat debitis quis velit. Eum ex maxime error in consequatur corporis atque. Eligendi asperiores sed qui veritatis aperiam quia a laborum inventore',
+				imgUrl: '../assets/images/specials-4.jpg',
+				imgName: 'specials 4'
+			},
+			{
+				heading: 'Est eveniet ipsam sindera pad rone matrelat sando reda',
+				paraItalic: 'Omnis blanditiis saepe eos autem qui sunt debitis porro quia.',
+				paraBot: 'Exercitationem nostrum omnis. Ut reiciendis repudiandae minus. Omnis recusandae ut non quam ut quod eius qui. Ipsum quia odit vero atque qui quibusdam amet. Occaecati sed est sint aut vitae molestiae voluptate vel',
+				imgUrl: '../assets/images/specials-5.jpg',
+				imgName: 'specials 5'
+			}
+		]
+	}
 
-    const menuCategory = {
-        all: [
-            {
-                name: 'Lobster Bisque',
-                price: '$5.95',
-                desc: 'Lorem, deren, trataro, filede, nerada'
-            },
-            {
-                name: 'Bread barrel',
-                price: '$6.95',
-                desc: 'Lorem, deren, trataro, filede, nerada'
-            },
-            {
-                name: 'Crab Cake',
-                price: '$7.95',
-                desc: 'A delicate crab cake served on a toasted roll with lettuce and tartar sauce'
-            },
-            {
-                name: 'Caesar Selections',
-                price: '$8.95',
-                desc: 'Lorem, deren, trataro, filede, nerada'
-            },
-            {
-                name: 'Tuscan Grilled',
-                price: '$9.95',
-                desc: 'Grilled chicken with provolone, artichoke hearts, and roasted red pesto'
-            },
-            {
-                name: 'Mozzarella Stick',
-                price: '$4.95',
-                desc: 'Lorem, deren, trataro, filede, nerada'
-            },
-            {
-                name: 'Greek Salad',
-                price: '$9.95',
-                desc: 'Fresh spinach, crisp romaine, tomatoes, and Greek olives'
-            },
-            {
-                name: 'Spinach Salad',
-                price: '$9.95',
-                desc: 'Fresh spinach with mushrooms, hard boiled egg, and warm bacon vinaigrette'
-            },
-            {
-                name: 'Lobster Roll',
-                price: '$12.95',
-                desc: 'Plump lobster meat, mayo and crisp lettuce on a toasted bulky roll'
-            }      
-        ],
-        starters: [
-            {
-                name: 'Lobster Bisque',
-                price: '$5.95',
-                desc: 'Lorem, deren, trataro, filede, nerada'
-            },
-            {
-                name: 'Crab Cake',
-                price: '$7.95',
-                desc: 'A delicate crab cake served on a toasted roll with lettuce and tartar sauce'
-            },
-            {
-                name: 'Mozzarella Stick',
-                price: '$4.95',
-                desc: 'Lorem, deren, trataro, filede, nerada'
-            }
-        ],
-        salads: [
-            {
-                name: 'Caesar Selections',
-                price: '$8.95',
-                desc: 'Lorem, deren, trataro, filede, nerada'
-            },
-            {
-                name: 'Greek Salad',
-                price: '$9.95',
-                desc: 'Fresh spinach, crisp romaine, tomatoes, and Greek olives'
-            },
-            {
-                name: 'Spinach Salad',
-                price: '$9.95',
-                desc: 'Fresh spinach with mushrooms, hard boiled egg, and warm bacon vinaigrette'
-            }   
-        ],
-        specialty: [
-            {
-                name: 'Bread barrel',
-                price: '$6.95',
-                desc: 'Lorem, deren, trataro, filede, nerada'
-            },
-            {
-                name: 'Tuscan Grilled',
-                price: '$9.95',
-                desc: 'Grilled chicken with provolone, artichoke hearts, and roasted red pesto'
-            },
-            {
-                name: 'Lobster Roll',
-                price: '$12.95',
-                desc: 'Plump lobster meat, mayo and crisp lettuce on a toasted bulky roll'
-            }      
-        ]
-    }
+	const events = {
+		title: {
+			heading: 'Organize Your ',
+			yellowHeading: 'Events'
+		},
+		info: [
+			{
+				imgUrl: '../assets/images/event-birthday.jpg',
+				imgAlt: 'image birthday',
+				heading: 'Birthday Parties',
+				price: '$189',
+				paraItalic: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+				list: ['Ullamco laboris nisi ut aliquip ex ea commodo consequat.', 'Duis aute irure dolor in reprehenderit in voluptate velit.', 'Ullamco laboris nisi ut aliquip ex ea commodo consequat.'],
+				paraBot: 'Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur'
+			},
+			{
+				imgUrl: '../assets/images/event-private.jpg',
+				imgAlt: 'image private',      
+				heading: 'Private Parties',
+				price: '$290',
+				paraItalic: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+				list: ['Ullamco laboris nisi ut aliquip ex ea commodo consequat.', 'Duis aute irure dolor in reprehenderit in voluptate velit.', 'Ullamco laboris nisi ut aliquip ex ea commodo consequat.'],
+				paraBot: 'Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur'
+			},
+			{
+				imgUrl: '../assets/images/event-custom.jpg',
+				imgAlt: 'image custom',
+				heading: 'Custom Parties',
+				price: '$99',
+				paraItalic: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+				list: ['Ullamco laboris nisi ut aliquip ex ea commodo consequat.', 'Duis aute irure dolor in reprehenderit in voluptate velit.', 'Ullamco laboris nisi ut aliquip ex ea commodo consequat.'],
+				paraBot: 'Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur'
+			}
+		]
+	}
 
-    const specialsTitle = {
-        heading: 'Check our ',
-        yellowHeading: 'Specials',
-        desc: 'Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.'
-    }
+	const bookTitle = {
+		heading: 'Book a ',
+		yellowHeading: 'Table',
+		desc: 'Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.'
+	}
 
-    const specialsInfo = [
-        {
-            heading: 'Architecto ut aperiam autem id',
-            paraItalic: 'Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka',
-            paraBot: 'Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. Laborum eos ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. Est repellat minima eveniet eius et quis magni nihil. Consequatur dolorem quaerat quos qui similique accusamus nostrum rem vero',
-            imgUrl: './assets/images/specials-1.jpg',
-            imgName: 'specials 1'
-        },
-        {
-            heading: 'Et blanditiis nemo veritatis excepturi',
-            paraItalic: 'Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka',
-            paraBot: 'Ea ipsum voluptatem consequatur quis est. Illum error ullam omnis quia et reiciendis sunt sunt est. Non aliquid repellendus itaque accusamus eius et velit ipsa voluptates. Optio nesciunt eaque beatae accusamus lerode pakto madirna desera vafle de nideran pal',
-            imgUrl: './assets/images/specials-2.jpg',
-            imgName: 'specials 2'
-        },
-        {
-            heading: 'Impedit facilis occaecati odio neque aperiam sit',
-            paraItalic: 'Eos voluptatibus quo. Odio similique illum id quidem non enim fuga. Qui natus non sunt dicta dolor et. In asperiores velit quaerat perferendis aut',
-            paraBot: 'Iure officiis odit rerum. Harum sequi eum illum corrupti culpa veritatis quisquam. Neque necessitatibus illo rerum eum ut. Commodi ipsam minima molestiae sed laboriosam a iste odio. Earum odit nesciunt fugiat sit ullam. Soluta et harum voluptatem optio quae',
-            imgUrl: './assets/images/specials-3.jpg',
-            imgName: 'specials 3'
-        },
-        {
-            heading: 'Fuga dolores inventore laboriosam ut est accusamus laboriosam dolore',
-            paraItalic: 'Totam aperiam accusamus. Repellat consequuntur iure voluptas iure porro quis delectus',
-            paraBot: 'Eaque consequuntur consequuntur libero expedita in voluptas. Nostrum ipsam necessitatibus aliquam fugiat debitis quis velit. Eum ex maxime error in consequatur corporis atque. Eligendi asperiores sed qui veritatis aperiam quia a laborum inventore',
-            imgUrl: './assets/images/specials-4.jpg',
-            imgName: 'specials 4'
-        },
-        {
-            heading: 'Est eveniet ipsam sindera pad rone matrelat sando reda',
-            paraItalic: 'Omnis blanditiis saepe eos autem qui sunt debitis porro quia.',
-            paraBot: 'Exercitationem nostrum omnis. Ut reiciendis repudiandae minus. Omnis recusandae ut non quam ut quod eius qui. Ipsum quia odit vero atque qui quibusdam amet. Occaecati sed est sint aut vitae molestiae voluptate vel',
-            imgUrl: './assets/images/specials-5.jpg',
-            imgName: 'specials 5'
-        }
-    ]
+	const gallery = {
+		title: {
+			heading: 'Some photos from  ',
+			yellowHeading: 'Our Restaurant',
+			desc: 'Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.'
+		},
+		imgUrl: [
+			'../assets/images/gallery-1.jpg',
+			'../assets/images/gallery-2.jpg',
+			'../assets/images/gallery-3.jpg',
+			'../assets/images/gallery-4.jpg',
+			'../assets/images/gallery-5.jpg',
+			'../assets/images/gallery-6.jpg',
+			'../assets/images/gallery-7.jpg',
+			'../assets/images/gallery-8.jpg'
+		]
+	}
 
-    const eventTitle = {
-        heading: 'Organize Your ',
-        yellowHeading: 'Events'
-    }
+	const chefs = {
+		title: {
+			heading: 'Our Proffesional ',
+			yellowHeading: 'Chefs',
+			desc: 'Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.'
+		},
+		info: [
+			{
+				imgUrl: '../assets/images/chefs-1.jpg',
+				imgAlt: 'Chef 1',
+				name: 'Walter White',
+				position: 'Master Chef',
+				socialList: [
+					{
+						icon: 'fab fa-twitter',
+						link: 'https://twitter.com'
+					},
+					{
+						icon: 'fab fa-facebook',
+						link: 'https://facebook.com'
+					},
+					{
+						icon: 'fab fa-instagram',
+						link: 'https://instagram.com'
+					},
+					{
+						icon: 'fab fa-linkedin',
+						link: 'https://www.linkedin.com/'
+					}
+				]
+			},
+			{
+				imgUrl: '../assets/images/chefs-2.jpg',
+				imgAlt: 'Chef 2',
+				name: 'Sarah Jhonson',
+				position: 'Patissier',
+				socialList: [
+					{
+						icon: 'fab fa-twitter',
+						link: 'https://twitter.com'
+					},
+					{
+						icon: 'fab fa-facebook',
+						link: 'https://facebook.com'
+					},
+					{
+						icon: 'fab fa-instagram',
+						link: 'https://instagram.com'
+					},
+					{
+						icon: 'fab fa-linkedin',
+						link: 'https://www.linkedin.com/'
+					}
+				]
+			},
+			{
+				imgUrl: '../assets/images/chefs-3.jpg',
+				imgAlt: 'Chef 3',
+				name: 'William Anderson',
+				position: 'Cook',
+				socialList: [
+					{
+						icon: 'fab fa-twitter',
+						link: 'https://twitter.com'
+					},
+					{
+						icon: 'fab fa-facebook',
+						link: 'https://facebook.com'
+					},
+					{
+						icon: 'fab fa-instagram',
+						link: 'https://instagram.com'
+					},
+					{
+						icon: 'fab fa-linkedin',
+						link: 'https://www.linkedin.com/'
+					}
+				]
+			},
+		]
+	}
 
-    const eventInfo = [
-        {
-            heading: 'Birthday Parties',
-            price: '$189',
-            paraItalic: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-            list: ['Ullamco laboris nisi ut aliquip ex ea commodo consequat.', 'Duis aute irure dolor in reprehenderit in voluptate velit.', 'Ullamco laboris nisi ut aliquip ex ea commodo consequat.'],
-            paraBot: 'Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur'
-        },
-                {
-            heading: 'Private Parties',
-            price: '$290',
-            paraItalic: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-            list: ['Ullamco laboris nisi ut aliquip ex ea commodo consequat.', 'Duis aute irure dolor in reprehenderit in voluptate velit.', 'Ullamco laboris nisi ut aliquip ex ea commodo consequat.'],
-            paraBot: 'Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur'
-        },
-                {
-            heading: 'Custom Parties',
-            price: '$99',
-            paraItalic: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-            list: ['Ullamco laboris nisi ut aliquip ex ea commodo consequat.', 'Duis aute irure dolor in reprehenderit in voluptate velit.', 'Ullamco laboris nisi ut aliquip ex ea commodo consequat.'],
-            paraBot: 'Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur'
-        }
-    ]
+	const testimonialsInfo = [
+		{
+			imgUrl: '../assets/images/testimonials-1.jpg',
+			imgAlt: 'first testimonial',
+			name: 'Saul Goodman',
+			position: 'Ceo & Founder',
+			star: 5,
+			quote: 'Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.'
+		},
+		{
+			imgUrl: '../assets/images/testimonials-2.jpg',
+			imgAlt: 'second testimonial',
+			name: 'Sara Wilsson',
+			position: 'Designer',
+			star: 4,
+			quote: 'Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.'
+		},
+		{
+			imgUrl: '../assets/images/testimonials-3.jpg',
+			imgAlt: 'third testimonial',
+			name: 'Jena Karlis',
+			position: 'Store Owner',
+			star: 2,
+			quote: 'Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.'
+		},
+		{
+			imgUrl: '../assets/images/testimonials-4.jpg',
+			imgAlt: 'fourth testimonial',
+			name: 'Matt Brandon',
+			position: 'Freelancer',
+			star: 5,
+			quote: 'Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.'
+		},
+		{
+			imgUrl: '../assets/images/testimonials-5.jpg',
+			imgAlt: 'fifth testimonial',
+			name: 'John Larson',
+			position: 'Entrepreneur',
+			star: 3,
+			quote: 'Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.'
+		}
+	]
 
-    const bookTitle = {
-        heading: 'Book a ',
-        yellowHeading: 'Table',
-        desc: 'Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.'
-    }
+	const contact = {
+		title: {
+			heading: 'Contact ',
+			yellowHeading: 'Us',
+			desc: 'Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.'
+		},
+		info: [
+			{
+				icon: 'fas fa-map-marker-alt',
+				heading: 'Location:',
+				desc1: 'A108 Adam Street',
+				desc2: 'New York, NY 535022'
+			},
+			{
+				icon: 'far fa-clock',
+				heading: 'Open Hours:',
+				desc1: 'Monday-Saturday:',
+				desc2: '11:00 AM - 2300 PM'
+			},
+			{
+				icon: 'far fa-envelope',
+				heading: 'Email:',
+				desc1: 'info@example.com',
+				desc2: 'contact@example.com'
+			},
+			{
+				icon: 'fas fa-mobile-alt',
+				heading: 'Call:',
+				desc1: '+1 5589 55488 51',
+				desc2: '+1 5589 22475 14'
+			}
+		]
+	}
 
-    const galleryTitle = {
-        heading: 'Some photos from  ',
-        yellowHeading: 'Our Restaurant',
-        desc: 'Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.'
-    }
-
-    const gallery = [
-        './assets/images/gallery-1.jpg',
-        './assets/images/gallery-2.jpg',
-        './assets/images/gallery-3.jpg',
-        './assets/images/gallery-4.jpg',
-        './assets/images/gallery-5.jpg',
-        './assets/images/gallery-6.jpg',
-        './assets/images/gallery-7.jpg',
-        './assets/images/gallery-8.jpg'
-    ]
-
-    const chefsTitle = {
-        heading: 'Our Proffesional ',
-        yellowHeading: 'Chefs',
-        desc: 'Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.'
-    }
-
-    const chefsInfo = [
-        {
-            imgUrl: './assets/images/chefs-1.jpg',
-            imgAlt: 'Chef 1',
-            name: 'Walter White',
-            position: 'Master Chef',
-            socialList: [
-                {
-                    icon: 'fab fa-twitter',
-                    link: 'https://twitter.com'
-                },
-                {
-                    icon: 'fab fa-facebook',
-                    link: 'https://facebook.com'
-                },
-                {
-                    icon: 'fab fa-instagram',
-                    link: 'https://instagram.com'
-                },
-                {
-                    icon: 'fab fa-linkedin',
-                    link: 'https://www.linkedin.com/'
-                }
-            ]
-        },
-        {
-            imgUrl: './assets/images/chefs-2.jpg',
-            imgAlt: 'Chef 2',
-            name: 'Sarah Jhonson',
-            position: 'Master Chef',
-            socialList: [
-                {
-                    icon: 'fab fa-twitter',
-                    link: 'https://twitter.com'
-                },
-                {
-                    icon: 'fab fa-facebook',
-                    link: 'https://facebook.com'
-                },
-                {
-                    icon: 'fab fa-instagram',
-                    link: 'https://instagram.com'
-                },
-                {
-                    icon: 'fab fa-linkedin',
-                    link: 'https://www.linkedin.com/'
-                }
-            ]
-        },
-        {
-            imgUrl: './assets/images/chefs-3.jpg',
-            imgAlt: 'Chef 3',
-            name: 'Walter White',
-            position: 'Master Chef',
-            socialList: [
-                {
-                    icon: 'fab fa-twitter',
-                    link: 'https://twitter.com'
-                },
-                {
-                    icon: 'fab fa-facebook',
-                    link: 'https://facebook.com'
-                },
-                {
-                    icon: 'fab fa-instagram',
-                    link: 'https://instagram.com'
-                },
-                {
-                    icon: 'fab fa-linkedin',
-                    link: 'https://www.linkedin.com/'
-                }
-            ]
-        },
-    ]
-
-    const testimonialsInfo = [
-        {
-            imgUrl: './assets/images/testimonials-1.jpg',
-            imgAlt: 'first testimonial',
-            name: 'Saul Goodman',
-            position: 'Ceo & Founder',
-            star: 5,
-            quote: 'Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.'
-        },
-        {
-            imgUrl: './assets/images/testimonials-2.jpg',
-            imgAlt: 'second testimonial',
-            name: 'Sara Wilsson',
-            position: 'Designer',
-            star: 4,
-            quote: 'Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.'
-        },
-        {
-            imgUrl: './assets/images/testimonials-3.jpg',
-            imgAlt: 'third testimonial',
-            name: 'Jena Karlis',
-            position: 'Store Owner',
-            star: 2,
-            quote: 'Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.'
-        },
-        {
-            imgUrl: './assets/images/testimonials-4.jpg',
-            imgAlt: 'fourth testimonial',
-            name: 'Matt Brandon',
-            position: 'Freelancer',
-            star: 5,
-            quote: 'Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.'
-        },
-        {
-            imgUrl: './assets/images/testimonials-5.jpg',
-            imgAlt: 'fifth testimonial',
-            name: 'John Larson',
-            position: 'Entrepreneur',
-            star: 3,
-            quote: 'Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.'
-        }
-    ]
-
-    const contactTitle = {
-        heading: 'Contact ',
-        yellowHeading: 'Us',
-        desc: 'Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.'
-    }
-
-    const contactInfo = [
-        {
-            icon: 'fas fa-map-marker-alt',
-            heading: 'Location:',
-            desc1: 'A108 Adam Street',
-            desc2: 'New York, NY 535022'
-        },
-        {
-            icon: 'far fa-clock',
-            heading: 'Open Hours:',
-            desc1: 'Monday-Saturday:',
-            desc2: '11:00 AM - 2300 PM'
-        },
-        {
-            icon: 'far fa-envelope',
-            heading: 'Email:',
-            desc1: 'info@example.com',
-            desc2: 'contact@example.com'
-        },
-        {
-            icon: 'fas fa-mobile-alt',
-            heading: 'Call:',
-            desc1: '+1 5589 55488 51',
-            desc2: '+1 5589 22475 14'
-        }
-    ]
-
-    const footerTitle = {
-        yellowHeading: 'Delicious',
-        desc: 'Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.'
-    }
-
-    const footer = {
-        socialList: [
-            {
-                icon: 'fab fa-twitter',
-                link: 'https://twitter.com'
-            },
-            {
-                icon: 'fab fa-facebook',
-                link: 'https://facebook.com'
-            },
-            {
-                icon: 'fab fa-instagram',
-                link: 'https://instagram.com'
-            },
-            {
-                icon: 'fab fa-skype',
-                link: 'https://skype.com'
-            },
-            {
-                icon: 'fab fa-linkedin',
-                link: 'https://www.linkedin.com/'
-            }
-        ]
-    }
+	const footer = {
+		title: {
+			yellowHeading: 'Delicious',
+			desc: 'Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.'
+		},
+		socialList: [
+			{
+				icon: 'fab fa-twitter',
+				link: 'https://twitter.com'
+			},
+			{
+				icon: 'fab fa-facebook',
+				link: 'https://facebook.com'
+			},
+			{
+				icon: 'fab fa-instagram',
+				link: 'https://instagram.com'
+			},
+			{
+				icon: 'fab fa-skype',
+				link: 'https://skype.com'
+			},
+			{
+				icon: 'fab fa-linkedin',
+				link: 'https://www.linkedin.com/'
+			}
+		]
+	}

@@ -3,16 +3,16 @@
   font-size: 1.3rem;
   font-weight: 600;
   border-radius: 50rem !important;
+  -webkit-border-radius: 50rem !important;
+  -moz-border-radius: 50rem !important;
+  -ms-border-radius: 50rem !important;
+  -o-border-radius: 50rem !important;
   border: 0.2rem solid transparent;
   transition: all 0.25s ease;
   -webkit-transition: all 0.25s ease;
   -moz-transition: all 0.25s ease;
   -ms-transition: all 0.25s ease;
   -o-transition: all 0.25s ease;
-  -webkit-border-radius: 50rem !important;
-  -moz-border-radius: 50rem !important;
-  -ms-border-radius: 50rem !important;
-  -o-border-radius: 50rem !important;
 
   &--yellow {
     color: $white;

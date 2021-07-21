@@ -128,7 +128,8 @@
   border-radius: 0.5rem;
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  animation: slide-down 0.4s ease-out;
+  animation: slide-up 0.4s ease-out;
+  -webkit-animation: slide-up 0.4s ease-out;
   z-index: 10;
   &--right {
     top: 0;

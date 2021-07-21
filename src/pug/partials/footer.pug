@@ -2,7 +2,7 @@ include ../base/mixins.pug
 
 footer.footer
     .container.py-5
-        +top-content(footerTitle)
+        +top-content(footer.title)
         .footer__social-links
             each item in footer.socialList
                 a(href= item.link)

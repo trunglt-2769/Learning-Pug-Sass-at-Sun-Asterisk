@@ -11,18 +11,6 @@ $light-border: #e8e7e4;
 $floralwhite: #fffaf3;
 $font-special: "Satisfy", cursive;
 
-$breakpoints: (
-  "small": (
-    min-width: 767px,
-  ),
-  "medium": (
-    min-width: 992px,
-  ),
-  "large": (
-    min-width: 1200px,
-  ),
-) !default;
-
 $grid-breakpoints: (
   xs: 0,
   sm: 576px,
